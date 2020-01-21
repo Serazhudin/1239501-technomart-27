@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Alex Krasnoshchekov](https://up.htmlacademy.ru/htmlcss/27/user/1239501).
-* Наставник: `Неизвестно`.
+* Наставник: [Andrey Pudov](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
