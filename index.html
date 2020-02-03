@@ -21,8 +21,8 @@
     <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     <p class="adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
     <ul>
-      <li><a href="#">Войти</a></li>
-      <li><a href="#">Регистрация</a></li>
+      <li class="login-link"><a href="#">Войти</a></li>
+      <li class="registration-link"><a href="#">Регистрация</a></li>
     </ul>
   </section>
 
@@ -99,7 +99,7 @@
         <ul class="popular-items-list">
          <li>
           <a href="catalog-item.html">
-            <img src="img/item-image-1.jpg" width="218" height="170" alt="Перфоратор-1">
+            <img src="img/item-image-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
           </a>
           <h3 class="catalog-category">Перфоратор BOSCH BFG 9000</h3>
           <p class="sale-price">32500 Р.</p>
@@ -111,7 +111,7 @@
         </li>
         <li>
           <a href="catalog-item.html">
-            <img src="img/item-image-2.jpg" width="218" height="170" alt="Перфоратор-2">
+            <img src="img/item-image-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
           </a>
           <h3 class="catalog-category">Перфоратор BOSCH BFG 3000</h3>
           <p class="sale-price">22500 Р.</p>
@@ -123,7 +123,7 @@
         </li>
         <li>
           <a href="catalog-item.html">
-            <img src="img/item-image-3.jpg" width="218" height="170" alt="Перфоратор-3">
+            <img src="img/item-image-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
           </a>
           <h3 class="catalog-category">Перфоратор BOSCH BFG 6000</h3>
           <p class="sale-price">30500 Р.</p>
@@ -135,7 +135,7 @@
         </li>
         <li>
           <a href="catalog-item.html">
-           <img src="img/item-image-4.jpg" width="218" height="170" alt="Перфоратор-4">
+           <img src="img/item-image-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
          </a>
          <h3 class="catalog-category">Перфоратор BOSCH BFG 9000</h3>
          <p class="sale-price"></p>
@@ -156,42 +156,42 @@
     <ul class="popular-producers-list">
      <li>
       <a href="catalog-item.html">
-       <img src="img/bosch.jpg" width="126" height="37" alt="Производитель-1">
+        <img src="img/bosch.jpg" width="126" height="37" alt="Производитель bosch">
      </a>
    </li>
    <li>
     <a href="catalog-item.html">
-     <img src="img/makita.jpg" width="123" height="40" alt="Производитель-2">
+     <img src="img/makita.jpg" width="123" height="40" alt="Производитель makita">
    </a>
  </li>
  <li>
   <a href="catalog-item.html">
-   <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель-3">
+   <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель de walt">
  </a>
 </li>
 <li>
   <a href="catalog-item.html">
-   <img src="img/invalid-name.jpg" width="200" height="88" alt="Производитель-4">
+   <img src="img/invalid-name.jpg" width="200" height="88" alt="Производитель интерскол">
  </a>
 </li>
 <li>
   <a href="catalog-item.html">
-   <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель-5">
+   <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель hitachi">
  </a>
 </li>
 <li>
   <a href="catalog-item.html">
-   <img src="img/lg.jpg" width="121" height="73" alt="Производитель-6">
+   <img src="img/lg.jpg" width="121" height="73" alt="Производитель lg">
  </a>
 </li>
 <li>
   <a href="catalog-item.html">
-   <img src="img/aeg.jpg" width="151" height="96" alt="Производитель-7">
+   <img src="img/aeg.jpg" width="151" height="96" alt="Производитель aeg">
  </a>
 </li>
 <li>
   <a href="catalog-item.html">
-   <img src="img/metabo.jpg" width="204" height="69" alt="Производитель-8">
+   <img src="img/metabo.jpg" width="204" height="69" alt="Производитель metabo">
  </a>
 </li>
 </ul>
@@ -245,10 +245,9 @@
 <section>
   <h2>Контакты</h2>
   <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-  <a href="#"><img src="img/map.jpg" width="300" height="158" alt="карта с расположением барбершопа"></a>
+  <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург"></a>
   <button class="button">Заблудились? Напишите нам!</button>
 </section>
-
 </main>
 
 <footer>
@@ -284,5 +283,24 @@
 </div>
 </div>
 </footer>
+
+<section class="modal modal-contact" >
+  <form class="contact-form" action="https://echo.technomart.ru" method="post">
+    <label >Ваше имя:<input class="user-name" type="text" name="name" placeholder="Имя Фамилия" ></label>
+    <label >Ваш e-mail:<input class="user-email" type="email" name="name" placeholder="email@example.com" ></label>
+    <label >Текст письма:<textarea name="text-modal-contact" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
+    <button class="button" type="submit">Отправить</button>
+    <button class="modal-close" type="button">Крестик</button>
+  </form>
+</section>
+
+<section class="modal modal-map">
+  <h2 class="visually-hidden">Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург</h2>
+  <p>
+    <img src="img/map.jpg" width="940" height="446" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург">
+  </p>
+  <button class="modal-close" type="button">Крестик</button>
+</section>
+
 </body>
 </html>
