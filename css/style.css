@@ -17,11 +17,18 @@ a {
 }
 
 .top-bar {
-    background-color:#293449;
+  background-color:#293449;
+  border-color: : transparent;
 }
 
 .top-bar a {
   color: white;
+  font-size:17px;
+}
+
+.bookmark:hover,
+.busket:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .order {
@@ -30,10 +37,31 @@ text-align: center;
 vertical-align: middle;
 }
 
+.order:hover {
+  background-color:#5fbb2d;
+}
+
+.order:active {
+  background-color:#518534;
+}
+
 .logo{
 background-color:#ee3643;
 text-align: center;
 vertical-align: middle;
+}
+
+.search {
+  background-color:#293449;
+}
+
+.search::placeholder {
+  color: white;
+}
+
+.search:focus {
+  color:black;
+  background-color:white;
 }
 
 .header-info h1 {
@@ -43,37 +71,58 @@ vertical-align: middle;
   font-style: italic;
 }
 
-.adress {
+.header-info a {
+  color: black;
+  font-size: 21px;
+}
+
+.header-info .adress {
   color: #32425c;
+  font-size: 14px;
 }
 
 .phone-header {
   color: #ee3643;
+  font-size: 21px;
 }
 
 .login-link,
 .registration-link {
-  color: black;
+  background-color: white;
 }
 
-.header-login {
-  background-color: #f4f7f9;
+.login-link:hover,
+.registration-link:hover {
+  color: #ee3643;
 }
 
-.main-nav {
+.login-link:focus,
+.registration-link:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+nav {
   background-color: #293449;
 }
 
-.main-nav ul {
+nav ul {
   list-style: none;
 }
 
-.main-nav a {
+nav a {
   color: white;
 }
 
 
+nav li:hover {
+  background-color: #32425c;
+}
 
+nav li:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
 
 
 
@@ -115,4 +164,62 @@ vertical-align: middle;
 .contacts .button {
   background-color:#ee3643;
   color: white;
+}
+
+footer {
+  background-color: #32425c;
+}
+
+.footer-top a {
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.footer-bottom a {
+  color: #ffd180;
+  font:inherit;
+  font-size:16px;
+}
+
+.adress-phone {
+  color: #f3f7f9;
+}
+
+.footer-menu,
+.footer-social {
+  list-style: none;
+}
+
+.footer-menu li {
+  color:#f1f5f7;
+}
+
+.footer-menu .colored {
+  color:#ffd180;
+}
+
+.footer-bottom p {
+  font:inherit;
+  font-size:16px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a:active {
+  opacity: 0.5;
+  text-decoration: none;
 }
