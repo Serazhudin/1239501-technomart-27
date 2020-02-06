@@ -8,12 +8,16 @@ body {
   font-weight: 400;
   color: white;
 
-  background-color: #f4f7f9;
+  background-color: white;
 }
 
 a {
   text-decoration: none;
+}
 
+/*HEADER*/
+header {
+  background-color: #f4f7f9;
 }
 
 .top-bar {
@@ -32,9 +36,9 @@ a {
 }
 
 .order {
-background-color:#63a63e;
-text-align: center;
-vertical-align: middle;
+  background-color:#63a63e;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .order:hover {
@@ -46,9 +50,9 @@ vertical-align: middle;
 }
 
 .logo{
-background-color:#ee3643;
-text-align: center;
-vertical-align: middle;
+  background-color:#ee3643;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .search {
@@ -81,7 +85,7 @@ vertical-align: middle;
   font-size: 14px;
 }
 
-.phone-header {
+.header-info .phone-header {
   color: #ee3643;
   font-size: 21px;
 }
@@ -124,10 +128,85 @@ nav li:active {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/*HEADER END*/
+
+
+/*CATALOG*/
+.breadcrumbs a {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color: black;
+}
+
+.page-main h1 {
+  background-color:#f2f6f8;
+  color: #32425c;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 30px;
+}
+
+.catalog-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.catalog-category {
+  font-size: 18px;
+  color: black;
+}
+
+.sale-price {
+  font-size: 17px;
+  color:#999999;
+  text-decoration: line-through;
+}
+
+.catalog-item-price {
+  font-size: 17px;
+  color: white;
+  background-color: #ee3643;
+}
+
+.on-hover {
+  text-transform: uppercase;
+}
+
+.buy-button {
+  background-color:#63a63e;
+  color: white;
+  box-shadow: 0px 3px #367315;
+}
+
+.bookmark-button {
+  background-color:white;
+  border: 3px solid #63a63e;
+  color: #32425c;
+}
+
+.buy-button:hover {
+  background-color:#5fbb2d;
+}
+
+.buy-button:active {
+  background-color:#518534;
+  box-shadow: none;
+}
+
+.bookmark-button:hover {
+  border: 3px solid #32425c;
+}
+
+.bookmark-button:active {
+  opacity: 0.3;
+}
 
 
 
-
+/*CATALOG END*/
 
 
 
@@ -166,6 +245,8 @@ nav li:active {
   color: white;
 }
 
+
+/*FOOTER*/
 footer {
   background-color: #32425c;
 }
@@ -223,3 +304,5 @@ footer {
   opacity: 0.5;
   text-decoration: none;
 }
+
+/*FOOTER END*/
