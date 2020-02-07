@@ -175,46 +175,161 @@ nav li:active {
 
 .delivery-icon {
   background-color: #ffc047 ;
+}
 
 .materials-icon a {
-  background-color: #ffbf47;
+  background-color: #e5ac40;
 }
 
 .instruments-icon a {
-  background-color: #3bbce3;
+  background-color: #35a9cc;
 }
 
 .machines-icon a {
-  background-color: #dc91d8 ;
+  background-color: #c682c2 ;
 }
 
 .sale-icon a {
-  background-color: #3bbce3;
+  background-color: #80c180;
 }
 
-.open-catalog {
+.delivery-icon a {
+  background-color: #e5ac40 ;
+}
+
+.slider-1,
+.round-buttons,
+.popular-items-list,
+.popular-producers-list {
+  list-style: none;
+}
+
+.open-catalog,
+.popular-items-name a,
+.popular-producers a,
+.credit a {
  background-color: #ee3643;
- color: black;
+ font-size: 14px;
+ line-height: 18px;
+ color:white;
+ text-transform: uppercase;
 }
 
-.popular-items {
-  color: black;
+.open-catalog:hover,
+.popular-items-name a:hover,
+.popular-producers a:hover,
+.credit a:hover {
+  background-color: #ca2c37;
 }
 
-.popular-items h2 {
+.open-catalog:active,
+.popular-items-name a:active,
+.popular-producers a:active,
+.credit a:active {
+  background-color: #ba2732;
+}
+
+
+.popular-items-name {
+  background-color:#f9f5f0;
+}
+
+.popular-items-name h2 {
   color: #32425c;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
 }
 
-.slider-1 {
+.catalog-category {
+  color: black;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.popular-producers {
+  background-color:#f9f5f0;
+}
+
+.popular-producers h2 {
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service {
+ background-color: #f4f7f9;
+}
+
+.service h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service p,
+.service-slider p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service-menu,
+.service-slider {
   list-style: none;
 }
 
-.lalala {
-  color: red;
+.service-menu .button {
+  color: white;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+
+  width: 240px;
+  height: 61px;
+  background-color: #32425c;
+  border: none;
+  box-shadow: inset 0px 1px 0px 0px #405069;
+  box-shadow: outset 0px 1px 0px 0px #293449;
 }
+
+.service-menu .button:active,
+.service-menu .button:focus {
+  background-color: white;
+  color: #32425c;
+}
+
+.service-menu .button:hover {
+  background-color: #293449;
+  color: white;
+}
+
+.service-slider h3 {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.popular-producers-list li {
+  width: 220px;
+  height: 145px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+}
+
+.popular-producers-list li:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-list li:active,
+.popular-producers-list li:focus {
+  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+}
+
 /*INDEX MAIN END*/
 
 /*CATALOG*/
@@ -329,6 +444,21 @@ nav li:active {
 .contacts .button {
   background-color:#ee3643;
   color: white;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+
+.about .button:hover,
+.contacts .button:hover {
+  background-color: #ca2c37;
+}
+
+.about .button:active,
+.contacts .button:active {
+  background-color: #ba2732;
 }
 
 
