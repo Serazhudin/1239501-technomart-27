@@ -49,7 +49,7 @@ header {
   background-color:#518534;
 }
 
-.logo{
+.logo {
   background-color:#ee3643;
   text-align: center;
   vertical-align: middle;
@@ -105,7 +105,6 @@ header {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 nav {
   background-color: #293449;
 }
@@ -118,7 +117,6 @@ nav a {
   color: white;
 }
 
-
 nav li:hover {
   background-color: #32425c;
 }
@@ -130,6 +128,94 @@ nav li:active {
 
 /*HEADER END*/
 
+/*INDEX MAIN START*/
+.page-main-index {
+  color: black;
+}
+
+.materials-icon,
+.instruments-icon,
+.machines-icon,
+.sale-icon,
+.delivery-icon {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+  width: 300px;
+  height: 123px;
+}
+
+.icons-top a,
+.icons-bottom a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.materials-icon {
+  background-color: #ffbf47;
+}
+
+.instruments-icon {
+  background-color: #3bbce3;
+}
+
+.machines-icon {
+  background-color: #dc91d8 ;
+}
+
+.sale-icon {
+  background-color: #8ed78f;
+}
+
+.delivery-icon {
+  background-color: #ffc047 ;
+
+.materials-icon a {
+  background-color: #ffbf47;
+}
+
+.instruments-icon a {
+  background-color: #3bbce3;
+}
+
+.machines-icon a {
+  background-color: #dc91d8 ;
+}
+
+.sale-icon a {
+  background-color: #3bbce3;
+}
+
+.open-catalog {
+ background-color: #ee3643;
+ color: black;
+}
+
+.popular-items {
+  color: black;
+}
+
+.popular-items h2 {
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.slider-1 {
+  list-style: none;
+}
+
+.lalala {
+  color: red;
+}
+/*INDEX MAIN END*/
 
 /*CATALOG*/
 .breadcrumbs a {
