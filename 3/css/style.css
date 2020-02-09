@@ -49,7 +49,7 @@ header {
   background-color:#518534;
 }
 
-.logo{
+.logo {
   background-color:#ee3643;
   text-align: center;
   vertical-align: middle;
@@ -105,7 +105,6 @@ header {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 nav {
   background-color: #293449;
 }
@@ -118,7 +117,6 @@ nav a {
   color: white;
 }
 
-
 nav li:hover {
   background-color: #32425c;
 }
@@ -130,14 +128,465 @@ nav li:active {
 
 /*HEADER END*/
 
+/*INDEX MAIN START*/
+.page-main-index {
+  color: black;
+}
+
+.materials-icon,
+.instruments-icon,
+.machines-icon,
+.sale-icon,
+.delivery-icon {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+  width: 300px;
+  height: 123px;
+}
+
+.icons-top a,
+.icons-bottom a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.materials-icon {
+  background-color: #ffbf47;
+}
+
+.instruments-icon {
+  background-color: #3bbce3;
+}
+
+.machines-icon {
+  background-color: #dc91d8 ;
+}
+
+.sale-icon {
+  background-color: #8ed78f;
+}
+
+.delivery-icon {
+  background-color: #ffc047 ;
+}
+
+
+.materials-icon a,
+.instruments-icon a,
+.machines-icon a,
+.sale-icon a ,
+.delivery-icon a {
+  color: white;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.materials-icon a:hover,
+.instruments-icon a:hover,
+.machines-icon a:hover,
+.sale-icon a:hover,
+.delivery-icon a:hover {
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+}
+
+
+.materials-icon a:active,
+.instruments-icon a:active,
+.machines-icon a:active,
+.sale-icon a:active,
+.delivery-icon a:active {
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.slider-1,
+.round-buttons,
+.popular-items-list,
+.popular-producers-list {
+  list-style: none;
+}
+
+.open-catalog,
+.popular-items-name a,
+.popular-producers a,
+.credit a {
+ background-color: #ee3643;
+ font-size: 14px;
+ line-height: 18px;
+ color:white;
+ text-transform: uppercase;
+}
+
+.open-catalog:hover,
+.popular-items-name a:hover,
+.popular-producers a:hover,
+.credit a:hover {
+  background-color: #ca2c37;
+}
+
+.open-catalog:active,
+.popular-items-name a:active,
+.popular-producers a:active,
+.credit a:active {
+  background-color: #ba2732;
+}
+
+
+.popular-items-name {
+  background-color:#f9f5f0;
+}
+
+.popular-items-name h2 {
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.catalog-category {
+  color: black;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.popular-producers {
+  background-color:#f9f5f0;
+}
+
+.popular-producers h2 {
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service {
+ background-color: #f4f7f9;
+}
+
+.service h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service p,
+.service-slider p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.service-menu,
+.service-slider {
+  list-style: none;
+}
+
+.service-menu .button {
+  color: white;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+
+  width: 240px;
+  height: 61px;
+  background-color: #32425c;
+  border: none;
+  box-shadow: inset 0px 1px 0px 0px #405069;
+  box-shadow: outset 0px 1px 0px 0px #293449;
+}
+
+.service-menu .button:hover {
+  background-color: #293449;
+  color: white;
+}
+
+.service-menu .button:active,
+.service-menu .button:focus {
+  background-color: white;
+  color: #32425c;
+}
+
+.service-slider h3 {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.popular-producers-list li {
+  width: 220px;
+  height: 145px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+}
+
+.popular-producers-list li:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-list li:active,
+.popular-producers-list li:focus {
+  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+}
+
+/*INDEX MAIN END*/
 
 /*CATALOG*/
+
+/*ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs a {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 18px;
   color: black;
 }
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  text-decoration: underline;
+  color:blue;
+}
+
+/*ХЛЕБНЫЕ КРОШКИ КОНЕЦ*/
+
+.filter {
+  color: black;
+
+}
+
+.filter  h2 {
+  color:black;
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #f7f3ec;
+}
+
+fieldset legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter .button {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  text-transform: uppercase;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Customize the label (the container) */
+.filter-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+.filter-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+}
+
+/* Hide the browser's default checkbox */
+.filter-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.filter-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  border:2px solid #c5c5c5;
+}
+
+.checkmark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  border:2px solid #c5c5c5;
+  border-radius: 50%;
+}
+
+.filter-checkbox input:checked ~ .checkmark-box,
+.filter-radio input:checked ~ .checkmark-radio {
+  border:2px solid #c5c5c5;
+}
+
+/* On mouse-over, add a grey background color */
+.filter-checkbox:hover input ~ .checkmark-box,
+.filter-checkbox:hover input ~ label {
+  border-color: #b5b5b5;
+  color: #b5b5b5;
+}
+
+.filter-radio:hover input ~ .checkmark-radio,
+.filter-radio:hover input ~ label {
+  border-color: #b5b5b5;
+  color: #b5b5b5;
+}
+
+
+.filter-checkbox:checked:hover input ~ .checkmark-box {
+  border-color: #b5b5b5;
+}
+
+.filter-radio:checked:hover input ~ .checkmark-radio {
+  border-color: #b5b5b5;
+}
+
+
+
+
+/* When the checkbox is checked*/
+.filter-checkbox input:disabled ~ .checkmark-box {
+  opacity:0.3;
+}
+
+.filter-checkbox input:checked:disabled ~ .checkmark-box {
+  opacity:0.3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* ??? Show the checkmark when checked */
+.filter-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.filter-checkbox .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+/*СОРТИРОВКА*/
+.sorting {
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting-list,
+.pagination-list {
+  list-style: none;
+}
+
+.sorting  h2 {
+  color:black;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting a {
+  color:rgba(0, 0, 0, 0.18);
+  text-decoration: underline;
+}
+
+.sorting a:hover {
+  color:black;
+}
+
+.sorting a:focus,
+.sorting a:active {
+  color:#ee3643;
+}
+
+/*СОРТИРОВКА КОНЕЦ*/
+
+/*ПАГИНАЦИЯ*/
+
+.pagination-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+
+  width: 38px;
+  height: 38px;
+  }
+
+.next {
+  width: 140px;
+  height: 38px;
+}
+
+.pagination-item a {
+  color: black;
+}
+
+.pagination-item:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item:focus {
+  background-color:#ee3643;
+  color: white;
+}
+
+/*ПАГИНАЦИЯ КОНЕЦ*/
 
 .page-main h1 {
   background-color:#f2f6f8;
@@ -243,8 +692,128 @@ nav li:active {
 .contacts .button {
   background-color:#ee3643;
   color: white;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
 }
 
+.about .button:hover,
+.contacts .button:hover {
+  background-color: #ca2c37;
+}
+
+.about .button:active,
+.contacts .button:active {
+  background-color: #ba2732;
+}
+
+.modal-contact {
+  width: 620px;
+  height: 430px;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+}
+
+.red-shadow {
+  box-shadow: 0px -7px 0px  0px #ee3643;
+}
+
+.modal-contact label {
+  font-size: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  color:black;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #dee3e4;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color:#a9a9a9;
+}
+
+.contact-form-bottom {
+  background-color: #f4f4f4;
+}
+
+.contact-form .button {
+  background-color: #ee3643;
+  color: white;
+  font-size: 14px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  border:none;
+}
+
+.modal-map img {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.modal-catalog {
+  width: 620px;
+  height: 282px;
+  box-shadow: 0px 20px 40px 0px rgba(41, 52, 73, 0.75);
+}
+
+.busket-success {
+  color: black;
+  font-size: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 30px;
+}
+
+.modal-catalog-bottom {
+  background-color: #f4f4f4;
+}
+
+.finish-order {
+  background-color: #ee3643;
+  color: white;
+  font-size: 14px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  border:none;
+}
+
+.modal-continue {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  border:none;
+}
+
+.finish-order:hover,
+.contact-form .button:hover {
+  background-color: #ca2c37;
+}
+
+.finish-order:active,
+.contact-form .button:active {
+  background-color: #ba2732;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 
 /*FOOTER*/
 footer {
