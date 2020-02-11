@@ -32,7 +32,72 @@ header {
 
 .bookmark:hover,
 .busket:hover {
+  background-color: #212a3a;
+}
+
+.bookmark:active,
+.busket:active {
   color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.catalog-busket {
+  background-color:#ee3643;
+}
+
+.catalog-busket:hover {
+  background-color: #ca2c37;
+}
+
+.catalog-busket:active {
+  background-color: #ba2732;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-info .order-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-info .cabinet-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-info .user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: black;
+}
+
+.header-info .order-link:hover {
+  color:#ee3643;
+  text-decoration: none;
+}
+
+.header-info .cabinet-link:hover {
+  color:#ee3643;
+  text-decoration: none;
+}
+
+.header-info .order-link:active {
+  opacity: 0.3;
+}
+
+.header-info .cabinet-link:active {
+  opacity: 0.3;
+}
+
+.header-info .user-name:hover {
+
+}
+
+.header-info .user-name:active {
+  opacity: 0.3;
 }
 
 .order {
@@ -61,6 +126,10 @@ header {
 
 .search::placeholder {
   color: white;
+}
+
+.search:hover {
+  background-color:#212a3a;
 }
 
 .search:focus {
@@ -547,6 +616,7 @@ fieldset legend {
 .sorting a:focus,
 .sorting a:active {
   color:#ee3643;
+  text-decoration: none;
 }
 
 /*СОРТИРОВКА КОНЕЦ*/
@@ -731,6 +801,16 @@ fieldset legend {
   border: 1px solid #dee3e4;
 }
 
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border: 2px solid  #b5b5b5;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid  #ee3643;
+}
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   font-size: 13px;
@@ -792,6 +872,14 @@ fieldset legend {
   line-height: 18px;
   text-transform: uppercase;
   border:none;
+}
+
+.modal-continue:hover {
+  color: #ee3643;
+}
+
+.modal-continue:active {
+  opacity:0.3;
 }
 
 .finish-order:hover,
