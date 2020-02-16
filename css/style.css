@@ -21,13 +21,6 @@ header {
   background-color: #f4f7f9;
 }
 
-.container-service,
-.container-about,
-.container-footer-top,
-.container-footer-bottom {
-  margin: 0px 130px 0px 130px;
-}
-
 .container {
   width: 940px;
   margin:  0 auto;
@@ -144,7 +137,6 @@ header {
 
 .header-info .container {
   display: flex;
-  align-items:center;
   padding-top:46px;
   padding-bottom:44px;
 }
@@ -169,7 +161,6 @@ header {
   color: #32425c;
   font-size: 14px;
   margin: 0px;
-
 }
 
 .adress-tel {
@@ -212,20 +203,33 @@ header {
   font-size: 21px;
   line-height: 21px;
   color: black;
-  background-color: white;
+}
 
-  padding: 14px 69px 11px 47px;
-  margin-top: 46px;
-
-  border: 2px solid red;
+.login-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 51px;
 }
 
 .login-area-bottom {
   display: flex;
+  margin:0px;
+  padding:0px;
 }
 
 .login-area-top {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width:299px;
+  height: 45px;
+  margin:0px;
+  padding:0px;
+  margin-bottom: 10px;
+
+  background-color: white;
+
 }
 
 .header-info .order-link:hover {
@@ -258,30 +262,28 @@ header {
 
 .header-login {
   display: flex;
+  margin-left:auto;
 }
 
 .header-login div:nth-child(1) {
   width: 121px;
+  height: 45px;
 
-
-  margin-left:69px;
+  background-color: white;
 }
 
 .header-login div:nth-child(2) {
   width: 150px;
-
-
+  height: 45px;
   margin-left: 10px;
+  background-color: white;
 }
 
 .login-link {
-  background-color: white;
   padding: 13px 27px 12px 48px;
-
 }
 
 .registration-link {
-  background-color: white;
   padding: 14px 25px 11px 25px;
 }
 
@@ -347,30 +349,42 @@ nav a:active {
 
 .icons-top p {
   margin:0px;
-  margin-left: 23px;
   margin-top: 26px;
+  margin-bottom: 16px;
+  margin-left: 23px;
 }
 
-.materials-icon,
-.instruments-icon,
-.machines-icon,
-.sale-icon,
-.delivery-icon {
-  font-family: "Cuprum", Arial, sans-serif;
+.icons-bottom {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
+
+.icons-bottom p {
+  margin:0px;
+  margin-top: 26px;
+  margin-bottom: 16px;
+  margin-left: 23px;
+}
+
+.icons-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0px;
+  margin-left: 20px;
+  margin-left: 20px;
+
+  width: 300px;
+  height: 123px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: white;
 }
 
-.icons-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.icons-top a,
-.icons-bottom a {
+.icons-item a {
   color: white;
   text-transform: uppercase;
   font-size: 14px;
@@ -379,26 +393,14 @@ nav a:active {
   text-align: center;
 }
 
-.icons-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding:0px;
-
-  width: 300px;
-  height: 123px;
-}
-
 .materials-icon {
   background-color: #ffbf47;
 
-  margin-right: 20px;
+  margin-left: 0px;
 }
 
 .instruments-icon {
   background-color: #3bbce3;
-
-  margin-right: 20px;
 }
 
 .machines-icon {
@@ -411,7 +413,6 @@ nav a:active {
 
 .delivery-icon {
   background-color: #ffc047 ;
-
   margin-top: 20px;
 }
 
@@ -436,20 +437,10 @@ nav a:active {
   background-color: rgba(0,0,0,0.3);
 }
 
-.icons-bottom-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.icons-bottom p {
-  margin:0px;
-  margin-left: 23px;
-  margin-top: 26px;
-}
-
 .slider-1 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .slide-1 {
@@ -481,11 +472,6 @@ nav a:active {
   display: none;
 }
 
-.slider-1,
-.round-buttons {
-  list-style: none;
-}
-
 .open-catalog {
   display: block;
   position: absolute;
@@ -493,19 +479,21 @@ nav a:active {
   height: 38px;
   left:25px;
   bottom:22px;
-  }
+  text-align: center;
+}
 
-.arrows,
-.round-buttons {
+.arrows {
   position: absolute;
 }
 
 .round-buttons {
-  top:748px;
+  display: flex;
+  position: absolute;
+  list-style: none;
+  bottom: 36px;
+  left: 295px;
 }
 /*Большие иконки и слайдер КОНЕЦ*/
-
-
 
 /*Популярные товары Заголовк + Кнопка*/
 
@@ -903,11 +891,27 @@ nav a:active {
 /*CATALOG*/
 
 /*ХЛЕБНЫЕ КРОШКИ*/
+.breadcrumbs {
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  align-items: center;
+}
+
 .breadcrumbs a {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 18px;
   color: black;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-current {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color: black;
+  text-transform: uppercase;
 }
 
 .breadcrumbs a:hover,
@@ -917,13 +921,15 @@ nav a:active {
   color:blue;
 }
 
+.page-main h1 {
+  padding: 32px 742px 34px 30px;
+}
 /*ХЛЕБНЫЕ КРОШКИ КОНЕЦ*/
 
 /*Фильтр*/
 
 .filter {
   color: black;
-
 }
 
 .filter  h2 {
@@ -931,6 +937,13 @@ nav a:active {
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
+
+  width: 220px;
+  height: 38px;
+}
+
+.catalog-1 .container {
+  display: flex;
 }
 
 fieldset legend {
@@ -1074,7 +1087,7 @@ fieldset legend {
 /*Фильтр КОНЕЦ*/
 
 /*СОРТИРОВКА*/
-.sorting {
+.sorting .container {
   background-color: #f7f3ec;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1479,24 +1492,46 @@ footer {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 76px;
+
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .footer-menu {
-  width: 547px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 547px;
+
   padding:0px;
   margin:0px;
   margin-top:42px;
-
-  outline: 2px solid yellow;
 }
 
 .footer-menu a {
   padding:0px;
   margin:0px;
-  margin-left:60px;
-  outline: 2px solid yellow;
+  padding-left:58px;
+}
+
+.footer-menu a:nth-child(1) {
+  padding-left:2px;
+}
+
+.footer-menu a:nth-child(6) {
+  padding-left:26px;
+}
+
+.footer-menu a {
+  color: white;
+}
+
+.footer-menu .colored {
+  color:#ffd180;
+
+  margin-top: 45px;
 }
 
 .footer-top .logo {
@@ -1505,13 +1540,13 @@ footer {
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
 
   margin-bottom:32px;
+  margin-right:173px;
 
   background-color:#ee3643;
   background-image: url(../img/logo-top.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  text-align: center;
-  vertical-align: middle;
+
 }
 
 .logo:hover {
@@ -1522,29 +1557,90 @@ footer {
   background-color:#ba2732;
 }
 
-.footer-top a {
-  color: white;
-}
-
 .adress-phone {
-  color: #f3f7f9;
-  width: 322px;
-  height: 40px;
+  position: absolute;
+  left:3px;
+  bottom:53px;
+
 }
 
+.adress-phone a {
+  padding:0px;
+  margin:0px;
+  color:white;
+}
+
+.adress-phone p {
+  padding:0px;
+  margin:0px;
+}
 
 .footer-bottom {
   background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+
+  padding-top:39px;
+  padding-bottom:35px;
+}
+
+.footer-bottom .container {
+  display: flex;
 }
 
 .footer-bottom a {
   color: #ffd180;
-  font:inherit;
-  font-size:16px;
+}
+
+.footer-copyright {
+  display: block;
+  width: 228px;
+  height: 33px;
+
+  margin-right: 161px;
 }
 
 .footer-social {
   list-style: none;
+  display: flex;
+  padding:0px;
+  margin-right: 119px;
+  outline: 2px solid yellow;
 }
 
+.footer-social li {
+  padding:0px;
+  margin:0px;
+
+  width: 42px;
+  height: 42px;
+}
+
+.call-back {
+  width: 135px;
+  height: 32px;
+
+  margin-right: 93px;
+}
+
+.developed-by {
+  width: 96px;
+  height: 34px;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active {
+  opacity: 0.5;
+}
+
+.footer-bottom a:active {
+  opacity: 0.5;
+}
 /*FOOTER END*/
