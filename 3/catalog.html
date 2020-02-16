@@ -12,53 +12,69 @@
 
 	<header>
     <div class="top-bar">
-      <div class="logo"><a href="index.html">ТУТ ЛОГО</a></div>
+      <div class="container">
+      <div class="logo"><a href="index.html"></a></div>
+      <form action="https://echo.htmlacademy.ru" method="post">
       <input class="search" type="search" name="search" placeholder="Поиск:">
-      <a class="bookmark" href="#">Закладки:</a>
-      <a class="catalog-busket" href="#">Корзина:10</a>
+      </form>
+      <a class="bookmark" href="#">Закладки: 0</a>
+      <a class="basket" href="#">Корзина: 0</a>
       <a class="order" href="#">Оформить заказ</a>
+      </div>
     </div>
+
     <section class="header-info">
+      <div class="container">
      <h1>
       Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
     </h1>
-    <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-    <p class="adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
-    <div class="header-login">
-      <ul>
-        <li ><a class="order-link" href="#">Мои заказы</a></li>
-        <li ><a class="cabinet-link" href="#">Личный кабинет</a></li>
-        <li ><a class="logout-link" href="#">Значок выхода</a></li>
-        <li><a class="user-name" href="#">Равшан Джамшутович</a></li>
-      </ul>
+    <div class="adress-tel">
+      <div><a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a></div>
+      <p class="adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
+    </div>
+      <div class="login-area">
+        <div class="login-area-top">
+          <a class="logout-link" href="#"></a>
+          <a class="user-name" href="#">Равшан Джамшутович</a>
+        </div>
+        <div class="login-area-bottom">
+          <a class="order-link" href="#">Мои заказы</a>
+          <a class="cabinet-link" href="#">Личный кабинет</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <nav class="main-navigation">
-   <ul class="site-navigation">
-    <li><a href="index.html" >Главная</a></li>
-    <li><a href="#" >Компания</a></li>
-    <li><a href="catalog.html" >Каталог</a></li>
-    <li><a href="#" >Новости</a></li>
-    <li><a href="#" >Спецпредложения</a></li>
-    <li><a href="#" >Доставка</a></li>
-    <li><a href="#" >Контакты</a></li>
-  </ul>
+  <nav>
+    <div class="container">
+    <a href="index.html" >Главная</a>
+    <a href="#" >Компания</a>
+    <a href="catalog.html" >Каталог</a>
+    <a href="#" >Новости</a>
+    <a href="#" >Спецпредложения</a>
+    <a href="#" >Доставка</a>
+    <a href="#" >Контакты</a>
+  </div>
 </nav>
 </header>
 
 <main class="page-main">
-  <h1>Перфораторы</h1>
+  <div class="container">
   <ul class="breadcrumbs">
    <li><a href="index.html">Домашняя</a></li>
    <li><a href="catalog.html">Каталог</a></li>
    <li><a href="#">Инструмент</a></li>
    <li class="breadcrumbs-current">Перфораторы</li>
  </ul>
+ <h1>Перфораторы</h1>
+  </div>
+
+<div class="catalog-1">
 
  <section class="filter">
-  <h2>Фильтр:</h2>
+  <div class="container">
   <form action="https://echo.htmlacademy.ru" method="post" oninput="price1.value=price1.value">
+    <h2>Фильтр:</h2>
     <fieldset>
       <legend>Цена:</legend>
       <input type="range" name="price1" id="price1" min="0" max="30000" step="1">
@@ -112,6 +128,7 @@
 </section>
 
 <section class="sorting">
+  <div class="container">
   <h2>Сортировка:</h2>
   <ul class="sorting-list">
     <li><a href="#">По цене</a></li>
@@ -120,7 +137,10 @@
     <li class="arrow-up"><a href="#">стрелка вверх</a></li>
     <li class="arrow-down"><a href="#">стрелка вниз</a></li>
   </ul>
+  </div>
 </section>
+</div>
+
 
 <section>
  <h2 class="visually-hidden">Список перфораторов</h2>
@@ -252,38 +272,48 @@
 </main>
 
 <footer>
- <div class="footer-top">
-  <div class="logo"><a href="index.html">ТУТ ЛОГО</a></div>
-  <p class="adress-phone">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-  <ul class="footer-menu">
-    <li><a href="#">Компания</a></li>
-    <li><a href="#">Новости</a></li>
-    <li><a href="#">Каталог</a></li>
-    <li><a href="#">Доставка</a></li>
-    <li><a href="#">Контакты</a></li>
-    <li ><a class="colored" href="#">Материалы</a></li>
-    <li ><a class="colored" href="#">Техника</a></li>
-    <li ><a class="colored" href="#">Инструмент</a></li>
-    <li ><a class="colored" href="#">Спецпредложения</a></li>
-  </ul>
+  <div class="container">
+   <div class="footer-top">
+        <div class="logo"><a href="index.html"></a>
+        </div>
+        <div class="footer-menu">
+        <a href="#">Компания</a>
+        <a href="#">Новости</a>
+        <a href="#">Каталог</a>
+        <a href="#">Доставка</a>
+        <a href="#">Контакты</a>
+        <a class="colored" href="#">Материалы</a>
+        <a class="colored" href="#">Техника</a>
+        <a class="colored" href="#">Инструмент</a>
+        <a class="colored" href="#">Спецпредложения</a>
+        </div>
+        <div class="adress-phone">
+        <p> г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
+      </div>
 </div>
+
 <div class="footer-bottom">
- <p class="footer-copyright">2010-2017 Компания "Техномарт"<br>Все права защищены</p>
- <ul class="footer-social">
-  <li>
-   <a href="#">Вконтакте</a>
- </li>
- <li>
-   <a href="#">Фейсбук</a>
- </li>
- <li>
-   <a href="#">Инстаграм</a>
- </li>
-</ul>
-<p>Обратная связь:<br><a href="#">mail@htmlacademy.ru</a></p>
-<p>Разработано - <br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+  <div class="container">
+   <p class="footer-copyright">2010-2017 Компания "Техномарт"<br>Все права защищены</p>
+   <ul class="footer-social">
+    <li>
+     <a href="#">В</a>
+   </li>
+   <li>
+     <a href="#">Ф</a>
+   </li>
+   <li>
+     <a href="#">И</a>
+   </li>
+ </ul>
+ <p class="call-back">Обратная связь:<br><a href="#">mail@htmlacademy.ru</a></p>
+ <p class="developed-by">Разработано -<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+</div>
 </div>
 </footer>
+
 
 <section class="modal-catalog">
   <p class="busket-success">Товар добавлен в корзину!</p>
