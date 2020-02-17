@@ -49,7 +49,9 @@ header {
   text-align: center;
   vertical-align: middle;
 
-  padding: 14px 22px 13px 20px;
+  width: 150px;
+  padding-top: 14px;
+  padding-bottom: 13px;
 }
 
 .order:hover {
@@ -82,15 +84,21 @@ header {
 
 .bookmark {
   flex-basis: 163px;
+  padding-top: 14px;
+  padding-bottom: 13px;
 }
 
 .basket {
   flex-basis: 163px;
+  padding-top: 14px;
+  padding-bottom: 13px;
 }
 
 .search {
   background-color:#293449;
   flex-basis: 285px;
+  padding-top: 14px;
+  padding-bottom: 16px;
   border: none;
 }
 
@@ -170,18 +178,18 @@ header {
   text-align: center;
 }
 
-.adress-tel div {
+ .header-info .phone-header {
+  display: block;
   width: 270px;
-  height: 45px;
+  padding-top:13px;
+  padding-bottom:11px;
   border: 3px solid white;
-}
 
-.adress-tel .phone-header {
   color: #ee3643;
   font-size: 21px;
   text-align: center;
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /*для Каталога*/
@@ -262,29 +270,29 @@ header {
 
 .header-login {
   display: flex;
+  align-items: flex-start;
   margin-left:auto;
 }
 
-.header-login div:nth-child(1) {
-  width: 121px;
-  height: 45px;
-
-  background-color: white;
-}
-
-.header-login div:nth-child(2) {
-  width: 150px;
-  height: 45px;
-  margin-left: 10px;
-  background-color: white;
-}
 
 .login-link {
-  padding: 13px 27px 12px 48px;
+  display: block;
+  width:121px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: white;
+  text-align: center;
 }
 
 .registration-link {
-  padding: 14px 25px 11px 25px;
+  display: block;
+  width:150px;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: white;
+
 }
 
 .login-link:hover,
@@ -352,6 +360,7 @@ nav a:active {
   margin-top: 26px;
   margin-bottom: 16px;
   margin-left: 23px;
+  margin-right: 23px;
 }
 
 .icons-bottom {
@@ -422,7 +431,7 @@ nav a:active {
 
   display: block;
   width: 135px;
-  height: 38px;
+  min-height: 38px;
   margin-left:23px;
   margin-bottom:22px;
 }
@@ -539,21 +548,35 @@ nav a:active {
 
 .popular-items-list {
   display: flex;
-
+  flex-wrap: wrap;
   list-style: none;
   padding: 0px;
+  margin: 0px;
+  margin-bottom: 21px;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
 }
 
 .catalog-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 220px;
   padding: 0px;
-  margin-left: 22px;
+  margin-left: 17px;
+  margin-top: 20px;
   padding-bottom: 21px;
 }
 
 .catalog-item:nth-child(1) {
+  margin-left: 0px;
+}
+
+.catalog-item:nth-child(5n) {
   margin-left: 0px;
 }
 
@@ -567,7 +590,9 @@ nav a:active {
 .catalog-item-price {
   display: block;
   width: 141px;
-  height: 38px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
   margin:0px;
 
   font-size: 17px;
@@ -614,19 +639,22 @@ nav a:active {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding-bottom: 65px;
+  text-align: center;
+}
 
+.catalog-link {
+  display: block;
+  width: 220px;
+  height: 145px;
 }
 
 .popular-producers-list li {
-
   margin-bottom: 20px;
   margin-right: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 220px;
-  height: 145px;
   border: 1px solid #e5e5e5;
 }
 
@@ -855,8 +883,7 @@ nav a:active {
   height: 61px;
   background-color: #32425c;
   border: none;
-  box-shadow: inset 0px 1px 0px 0px #405069;
-  box-shadow: outset 0px 1px 0px 0px #293449;
+  outline: none;
 }
 
 .service-menu .button:hover {
@@ -928,7 +955,7 @@ nav a:active {
 
 /*Фильтр*/
 
-.filter {
+.filter .container {
   color: black;
 }
 
@@ -943,7 +970,7 @@ nav a:active {
 }
 
 .catalog-1 .container {
-  display: flex;
+
 }
 
 fieldset legend {
@@ -1087,11 +1114,12 @@ fieldset legend {
 /*Фильтр КОНЕЦ*/
 
 /*СОРТИРОВКА*/
-.sorting .container {
+.sorting {
   background-color: #f7f3ec;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  width: 700px;
 }
 
 .sorting-list,
@@ -1238,27 +1266,29 @@ fieldset legend {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   font: inherit;
   color: black;
   background-color: white;
 
   width: 519px;
+  min-height: 368px;
   margin:0px;
   padding:0px;
   margin-right:120px;
-
-  outline: 2px solid red;
 }
 
 .contacts {
+  display: flex;
+  flex-direction: column;
   font: inherit;
   color: black;
   background-color: white;
 
   width: 300px;
+  min-height: 368px;
   margin:0px;
-
-  outline: 2px solid red;
 }
 
 .about h2,
@@ -1268,7 +1298,6 @@ fieldset legend {
   line-height: 30px;
   font-weight: normal;
 
-  outline: 2px solid red;
   margin:0px;
   padding:0px;
   margin-bottom:38px;
@@ -1280,7 +1309,6 @@ fieldset legend {
   font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 
-  outline: 2px solid red;
   margin:0px;
   padding:0px;
   margin-bottom:36px;
@@ -1299,15 +1327,14 @@ fieldset legend {
   font-weight: 500;
   line-height: 24px;
 
+  margin:0px;
   padding: 0px;
-  margin-bottom:37px;
-
-  outline: 2px solid yellow;
 }
 
 .about-list li {
   font-size:18px;
   line-height: 20px;
+
 }
 
 .about-list li:nth-child(1) {
@@ -1318,7 +1345,6 @@ fieldset legend {
   padding-bottom: 0px;
   padding-top:0px;
   margin: 0px;
-  outline: 2px solid yellow;
 }
 
 .about .button,
@@ -1330,21 +1356,25 @@ fieldset legend {
   font-size: 14px;
   line-height: 18px;
   border: none;
+  text-align: center;
 }
 
 .contacts .button {
   margin-top:40px;
   display: block;
   width: 300px;
-  height: 38px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top:auto;
 }
 
 .about .button {
   margin:0px;
+  display: block;
   width: 220px;
-  height: 38px;
-
-  outline: 2px solid yellow;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top:37px;
 }
 
 .about .button:hover,
@@ -1489,39 +1519,69 @@ footer {
   background-color: #32425c;
 }
 
-.footer-top {
+.footer-top .container {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
-  padding-bottom: 76px;
+
 
   font-size: 18px;
   line-height: 24px;
 }
 
 .footer-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   width: 547px;
 
   padding:0px;
   margin:0px;
+  margin-left:173px;
+  margin-bottom:66px;
+}
+
+.footer-menu-white {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  width: 547px;
+  list-style: none;
+  margin:0px;
+  padding: 0px;
   margin-top:42px;
 }
 
-.footer-menu a {
+.footer-menu-white li {
   padding:0px;
   margin:0px;
-  padding-left:58px;
+  margin-right: 58px;
+  margin-bottom: 10px;
+
 }
 
-.footer-menu a:nth-child(1) {
-  padding-left:2px;
+.footer-menu-white li:nth-child(5) {
+  margin-right: 0px;
 }
 
-.footer-menu a:nth-child(6) {
-  padding-left:26px;
+.footer-menu-colored {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+  padding-left: 23px;
+  margin-top:45px;
+
+}
+
+.footer-menu-colored li {
+  padding:0px;
+  margin:0px;
+  margin-right: 59px;
+
+  margin-bottom: 10px;
+}
+
+.footer-menu-colored li:nth-child(4) {
+  margin-right: 0px;
 }
 
 .footer-menu a {
@@ -1540,13 +1600,11 @@ footer {
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
 
   margin-bottom:32px;
-  margin-right:173px;
 
   background-color:#ee3643;
   background-image: url(../img/logo-top.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-
 }
 
 .logo:hover {
@@ -1561,7 +1619,6 @@ footer {
   position: absolute;
   left:3px;
   bottom:53px;
-
 }
 
 .adress-phone a {
