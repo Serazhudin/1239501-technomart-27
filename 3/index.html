@@ -30,12 +30,12 @@
         Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
       </h1>
       <div class="adress-tel">
-        <div><a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a></div>
+        <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
       </div>
       <div class="header-login">
-        <div ><a class="login-link" href="#">Войти</a></div>
-        <div ><a class="registration-link" href="#">Регистрация</a></div>
+        <a class="login-link" href="#">Войти</a>
+        <a class="registration-link" href="#">Регистрация</a>
       </div>
     </div>
   </section>
@@ -171,46 +171,46 @@
   <div class="container">
     <div class="popular-producers">
       <h2>Популярные производители:</h2>
-      <a href="№">Все производители</a>
+      <a href="#">Все производители</a>
     </div>
     <ul class="popular-producers-list">
      <li>
-      <a href="catalog-item.html">
+      <a class="catalog-link" href="catalog-item.html">
         <img src="img/bosch.jpg" width="126" height="37" alt="Производитель bosch">
       </a>
     </li>
     <li>
-      <a href="catalog-item.html">
+      <a class="catalog-link" href="catalog-item.html">
        <img src="img/makita.jpg" width="123" height="40" alt="Производитель makita">
      </a>
    </li>
    <li>
-    <a href="catalog-item.html">
+    <a class="catalog-link" href="catalog-item.html">
      <img src="img/de-walt.jpg" width="146" height="44" alt="Производитель dewalt">
    </a>
  </li>
  <li>
-  <a href="catalog-item.html">
+  <a class="catalog-link" href="catalog-item.html">
    <img src="img/invalid-name.jpg" width="200" height="88" alt="Производитель интерскол">
  </a>
 </li>
 <li>
-  <a href="catalog-item.html">
+  <a class="catalog-link" href="catalog-item.html">
    <img src="img/hitachi.jpg" width="169" height="31" alt="Производитель hitachi">
  </a>
 </li>
 <li>
-  <a href="catalog-item.html">
+  <a class="catalog-link" href="catalog-item.html">
    <img src="img/lg.jpg" width="121" height="73" alt="Производитель lg">
  </a>
 </li>
 <li>
-  <a href="catalog-item.html">
+  <a class="catalog-link" href="catalog-item.html">
    <img src="img/aeg.jpg" width="151" height="96" alt="Производитель aeg">
  </a>
 </li>
 <li>
-  <a href="catalog-item.html">
+  <a class="catalog-link" href="catalog-item.html">
    <img src="img/metabo.jpg" width="204" height="69" alt="Производитель metabo">
  </a>
 </li>
@@ -237,7 +237,6 @@
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
          </div>
-         <p class="icon icon-delivery"></p>
        </li>
        <li >
         <div class="guarantee-text">
@@ -248,7 +247,6 @@
             сгоревший товар на новый.<br>
             Дом уж восстановите как-нибудь сами.</p>
         </div>
-        <p class="icon icon-guarantee"></p>
       </li>
       <li >
         <div class="credit-text">
@@ -256,7 +254,6 @@
           <p>Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.</p>
         </div>
-        <p class="icon icon-credit"></p>
         <a class="credit-button" href="#">Отправить заявку</a>
       </li>
     </ul>
@@ -277,34 +274,37 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <button class="button">Подробнее о компании</button>
+      <a class="button">Подробнее о компании</a>
   </section>
 
   <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
     <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург"></a>
-    <button class="button">Заблудились? Напишите нам!</button>
+    <a class="button">Заблудились? Напишите нам!</a>
   </section>
 </div>
 </div>
 </main>
 
 <footer>
-  <div class="container">
    <div class="footer-top">
-        <div class="logo"><a href="index.html"></a>
-        </div>
+    <div class="container">
+        <div class="logo"><a href="index.html"></a></div>
         <div class="footer-menu">
-        <a href="#">Компания</a>
-        <a href="#">Новости</a>
-        <a href="#">Каталог</a>
-        <a href="#">Доставка</a>
-        <a href="#">Контакты</a>
-        <a class="colored" href="#">Материалы</a>
-        <a class="colored" href="#">Техника</a>
-        <a class="colored" href="#">Инструмент</a>
-        <a class="colored" href="#">Спецпредложения</a>
+          <ul class="footer-menu-white">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="footer-menu-colored">
+            <li><a class="colored" href="#">Материалы</a></li>
+            <li><a class="colored" href="#">Техника</a></li>
+            <li><a class="colored" href="#">Инструмент</a></li>
+            <li><a class="colored" href="#">Спецпредложения</a></li>
+          </ul>
         </div>
         <div class="adress-phone">
         <p> г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
