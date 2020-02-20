@@ -63,6 +63,7 @@ header {
 }
 
 .logo {
+  display: block;
   background-color:#ee3643;
   background-image: url(../img/logo-top.svg);
   background-repeat: no-repeat;
@@ -266,13 +267,29 @@ header {
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+  margin-right:32px;
 }
 
 .header-info .cabinet-link {
+  position: relative;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
+}
+
+.header-info .cabinet-link::before {
+  content: "";
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+  background-color: #32425c;
+
+  left:-16px;
+  top:50%;
+  margin-top:-2px;
+  transform: rotate(45deg);
 }
 
 .header-info .user-name {
@@ -281,8 +298,40 @@ header {
   color: black;
 }
 
+.header-info .user-name::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 28px;
+
+  top: 50%;
+  left: 5%;
+  margin-top: -14px;
+
+  background-image: url(../img/icon-user.svg);
+  background-repeat: no-repeat;
+  outline: 1px solid yellow;
+}
+
+.header-info .user-name::after {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 17px;
+
+  top: 50%;
+  left: 90%;
+  margin-top: -8px;
+
+  background-image: url(../img/icon-logout.svg);
+  background-repeat: no-repeat;
+}
+
 .login-area {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   margin-left: 51px;
@@ -296,6 +345,7 @@ header {
 
 .login-area-top {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width:299px;
@@ -752,6 +802,7 @@ nav a:active {
 
 .popular-items-list .catalog-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 220px;
@@ -769,6 +820,21 @@ nav a:active {
   margin-left: 0px;
 }
 
+.popular-items-list .catalog-item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 59px;
+
+  top: 0;
+  left: 100%;
+  margin-left: -60px;
+
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+}
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -778,6 +844,7 @@ nav a:active {
 
 .catalog-list .catalog-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 218px;
@@ -789,6 +856,23 @@ nav a:active {
 
 .catalog-list .catalog-item:nth-child(3n) {
   margin-right: 0px;
+}
+
+.catalog-list .catalog-item:nth-child(3)::before,
+.catalog-list .catalog-item:nth-child(5)::before,
+.catalog-list .catalog-item:nth-child(7)::before {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 59px;
+
+  top: 0;
+  left: 100%;
+  margin-left: -60px;
+
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
 }
 
 .catalog-category {
@@ -1151,6 +1235,51 @@ nav a:active {
   padding: 0px;
   list-style: none;
   align-items: center;
+  margin-left:54px;
+}
+
+.breadcrumbs li {
+  position: relative;
+}
+
+.breadcrumbs li:nth-child(1) {
+  margin-right: 39px;
+}
+
+.breadcrumbs li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+
+  width: 14px;
+  height: 12px;
+
+  top: 50%;
+  left: -54px;
+  margin-top: -6px;
+
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:nth-child(1)::after,
+.breadcrumbs li:nth-child(2)::before,
+.breadcrumbs li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+
+  width: 8px;
+  height: 12px;
+
+  top: 50%;
+  left: -22px;
+  margin-top: -6px;
+
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:nth-child(2) {
+  margin-right: 43px;
 }
 
 .breadcrumbs a {
@@ -1975,7 +2104,7 @@ footer {
   display: block;
   width: 228px;
   height: 33px;
-
+  white-space: pre;
   margin-right: 161px;
 }
 
@@ -2014,8 +2143,8 @@ footer {
   height: 15px;
 
   top: 50%;
-  margin-top: -8px;
-  left: 5%;
+  margin-top: -7px;
+  left: 6%;
 
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
@@ -2043,7 +2172,7 @@ footer {
   top: 50%;
   left: 50%;
   margin-top: -11px;
-  margin-left: -3px;
+  margin-left: 2px;
 
   background-image: url(../img/icon-fb.svg);
   background-repeat: no-repeat;
@@ -2069,10 +2198,8 @@ footer {
   height: 21px;
 
   top: 50%;
-  left: 82%;
+  left: 87%;
   margin-top: -10px;
-
-
 
   background-image: url(../img/icon-instagram.svg);
   background-repeat: no-repeat;
