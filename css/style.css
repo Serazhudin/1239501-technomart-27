@@ -83,18 +83,57 @@ header {
 }
 
 .bookmark {
+  position: relative;
   flex-basis: 163px;
   padding-top: 14px;
   padding-bottom: 13px;
+}
+
+.bookmark::before {
+  content: "";
+  position: absolute;
+
+  width: 14px;
+  height: 16px;
+
+  top: 50%;
+  left: 0%;
+  margin-top: -8px;
+
+  background-image: url(../img/icon-bookmark.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  outline: 1px solid yellow;
+
+  opacity: 0.3;
 }
 
 .basket {
+  position: relative;
   flex-basis: 163px;
   padding-top: 14px;
   padding-bottom: 13px;
 }
 
+.basket::before {
+  content: "";
+  position: absolute;
+
+  width: 15px;
+  height: 15px;
+
+  top: 50%;
+  left: 0%;
+  margin-top: -7px;
+
+  background-image: url(../img/icon-basket.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  outline: 1px solid yellow;
+}
+
 .search {
+  position: relative;
   background-color:#293449;
   flex-basis: 285px;
   padding-top: 14px;
@@ -103,7 +142,20 @@ header {
 }
 
 .search::placeholder {
+  padding-left: 20px;
   color: white;
+}
+
+.search::placeholder::before {
+  content: "";
+  position: absolute;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  outline: 1px solid yellow;
 }
 
 .search:hover {
@@ -174,12 +226,12 @@ header {
 .adress-tel {
   margin: 0px;
   padding:0px;
-
   text-align: center;
 }
 
  .header-info .phone-header {
   display: block;
+  position: relative;
   width: 270px;
   padding-top:13px;
   padding-bottom:11px;
@@ -191,6 +243,22 @@ header {
 
   margin-bottom: 5px;
 }
+
+.header-info .phone-header::before {
+  content: "";
+  position: absolute;
+
+  width: 19px;
+  height: 19px;
+
+  top: 50%;
+  left: 0%;
+  margin-top: -9px;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  outline: 1px solid yellow;
+}
+
 
 /*для Каталога*/
 .header-info .order-link {
@@ -277,11 +345,29 @@ header {
 
 .login-link {
   display: block;
+  position: relative;
   width:121px;
   padding-top: 14px;
   padding-bottom: 11px;
   background-color: white;
   text-align: center;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 17px;
+
+  top: 50%;
+  left: 0%;
+  margin-top: -8px;
+
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  outline: 1px solid yellow;
 }
 
 .registration-link {
@@ -292,7 +378,6 @@ header {
   margin-left: 10px;
   text-align: center;
   background-color: white;
-
 }
 
 .login-link:hover,
@@ -396,25 +481,120 @@ nav a:active {
 }
 
 .materials-icon {
+  position: relative;
   background-color: #ffbf47;
   margin-left: 0px;
 }
 
+.materials-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 44px;
+  height: 65px;
+
+  top: 50%;
+  left: 70%;
+  margin-top: -32px;
+
+  background-image: url(../img/icon-materials.svg);
+  background-repeat: no-repeat;
+}
+
+.materials-icon::after {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 59px;
+
+  top: 0;
+  left: 100%;
+  margin-left: -60px;
+
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+}
+
 .instruments-icon {
+  position: relative;
   background-color: #3bbce3;
 }
 
+.instruments-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 75px;
+  height: 61px;
+
+  top: 50%;
+  left: 70%;
+  margin-top: -30px;
+
+  background-image: url(../img/icon-instruments.svg);
+  background-repeat: no-repeat;
+}
+
 .machines-icon {
+  position: relative;
   background-color: #dc91d8 ;
 }
 
+.machines-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 78px;
+  height: 62px;
+
+  top: 50%;
+  left: 70%;
+  margin-top: -31px;
+
+  background-image: url(../img/icon-machines.svg);
+  background-repeat: no-repeat;
+}
+
 .sale-icon {
+  position: relative;
   background-color: #8ed78f;
 }
 
+.sale-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 59px;
+  height: 72px;
+
+  top: 50%;
+  left: 70%;
+  margin-top: -36px;
+
+  background-image: url(../img/icon-sale.svg);
+  background-repeat: no-repeat;
+}
+
 .delivery-icon {
+  position: relative;
   background-color: #ffc047 ;
   margin-top: 20px;
+}
+
+.delivery-icon::before {
+  content: "";
+  position: absolute;
+
+  width: 78px;
+  height: 63px;
+
+  top: 50%;
+  left: 70%;
+  margin-top: -31px;
+
+  background-image: url(../img/icon-delivery.svg);
+  background-repeat: no-repeat;
 }
 
 .icons-button:hover {
@@ -620,7 +800,8 @@ nav a:active {
 
 .catalog-item-price {
   display: block;
-  width: 141px;
+  position: relative;
+  width: 122px;
   padding-top: 13px;
   padding-bottom: 13px;
   margin:0px;
@@ -629,6 +810,22 @@ nav a:active {
   line-height:18px;
   color: white;
   background-color: #ee3643;
+}
+
+.catalog-item-price::before {
+  content: "";
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+  border: 22px solid #ffffff;
+  border-left-color: #ee3643;
+  border-right-width: 0px;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+
+  left: 100%;
+  top: 0%;
 }
 
 .open-catalog,
@@ -1434,10 +1631,29 @@ fieldset legend {
   padding: 0px;
 }
 
+.about-list p {
+  margin:0px;
+  padding: 0px;
+}
+
 .about-list li {
   font-size:18px;
-  line-height: 20px;
+  position: relative;
+  margin-left: 15px;
+}
 
+.about-list li::before {
+  content: "";
+  position: absolute;
+
+  width: 10px;
+  height: 2px;
+  background-color:black;
+
+  top: 50%;
+  left: 0%;
+  margin-left: -15px;
+  margin-top: -2px;
 }
 
 .about-list li:nth-child(1) {
@@ -1766,17 +1982,100 @@ footer {
 .footer-social {
   list-style: none;
   display: flex;
+  position: relative;
   padding:0px;
   margin-right: 119px;
-  outline: 2px solid yellow;
+  width: 132px;
+  height: 42px;
 }
 
 .footer-social li {
   padding:0px;
   margin:0px;
+}
+
+.footer-social .vk::before {
+  content: "";
+  position: absolute;
 
   width: 42px;
   height: 42px;
+  border-radius: 50%;
+  background-color:#212a3a;
+
+  left: 0;
+}
+
+.footer-social .vk::after {
+  content: "";
+  position: absolute;
+
+  width: 26px;
+  height: 15px;
+
+  top: 50%;
+  margin-top: -8px;
+  left: 5%;
+
+  background-image: url(../img/icon-vk.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social .fb::before {
+  content: "";
+  position: absolute;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color:#212a3a;
+
+  left: 45px;
+}
+
+.footer-social .fb::after {
+  content: "";
+  position: absolute;
+
+  width: 12px;
+  height: 22px;
+
+  top: 50%;
+  left: 50%;
+  margin-top: -11px;
+  margin-left: -3px;
+
+  background-image: url(../img/icon-fb.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-social .instagram::before {
+  content: "";
+  position: absolute;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color:#212a3a;
+
+  left: 90px;
+}
+
+.footer-social .instagram::after {
+  content: "";
+  position: absolute;
+
+  width: 21px;
+  height: 21px;
+
+  top: 50%;
+  left: 82%;
+  margin-top: -10px;
+
+
+
+  background-image: url(../img/icon-instagram.svg);
+  background-repeat: no-repeat;
 }
 
 .call-back {
