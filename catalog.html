@@ -17,7 +17,7 @@
       <input class="search" type="search" name="search" placeholder="Поиск:">
       </form>
       <a class="bookmark" href="#">Закладки: 0</a>
-      <a class="basket" href="#">Корзина: 0</a>
+      <a class="basket catalog-basket" href="#">Корзина: 10</a>
       <a class="order" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -83,27 +83,27 @@
     <fieldset>
       <legend >Производители:</legend>
       <div class="filter-checkbox">
-        <input type="checkbox" id="bosch" name="bosch" checked>
+        <input type="checkbox" class="visually-hidden" id="bosch" name="bosch" checked>
         <span class="checkmark-box"></span>
         <label for="bosch">BOSCH</label>
       </div>
       <div class="filter-checkbox">
-        <input type="checkbox" id="interscol" name="интерскол">
+        <input type="checkbox" class="visually-hidden" id="interscol" name="интерскол">
         <span class="checkmark-box"></span>
         <label for="interscol">Интерскол</label>
       </div>
       <div class="filter-checkbox">
-        <input type="checkbox" name="makita" checked>
+        <input type="checkbox" class="visually-hidden" name="makita" checked>
         <span class="checkmark-box"></span>
         <label id="makita">Makita</label>
       </div>
       <div class="filter-checkbox">
-        <input type="checkbox" name="dewalt">
+        <input type="checkbox" class="visually-hidden" name="dewalt">
         <span class="checkmark-box"></span>
         <label id="dewalt">Dewalt</label>
       </div>
       <div class="filter-checkbox">
-        <input type="checkbox" name="hitachi" disabled>
+        <input type="checkbox" class="visually-hidden" name="hitachi" disabled>
         <span class="checkmark-box"></span>
         <label id="hitachi">Hitachi</label>
       </div>
@@ -111,12 +111,12 @@
     <fieldset>
       <legend>Питание:</legend>
       <div class="filter-radio">
-        <input type="radio" name="charge-type" id="battery" value="battery" checked>
+        <input type="radio" class="visually-hidden" name="charge-type" id="battery" value="battery" checked>
         <span class="checkmark-radio"></span>
         <label for="battery">Аккумуляторные</label>
       </div>
       <div class="filter-radio">
-        <input type="radio" name="charge-type" id="plug" value="plug">
+        <input type="radio" class="visually-hidden" name="charge-type" id="plug" value="plug">
         <span class="checkmark-radio"></span>
         <label for="plug">Сетевые</label>
       </div>
@@ -130,7 +130,7 @@
 <section>
   <section class="sorting">
   <ul class="sorting-list">
-    <li><h2>Сортировка:</h2></li>
+    <h2>Сортировка:</h2>
     <li><a href="#">По цене</a></li>
     <li><a href="#">По типу</a></li>
     <li><a href="#">По функционалу</a></li>
@@ -173,7 +173,7 @@
       <img src="img/item-image-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
     </a>
     <h3 class="catalog-category">Перфоратор BOSCH BFG 2000</h3>
-    <p class="sale-price"></p>
+    <p class="sale-price invisible">30500 Р.</p>
     <p class="catalog-item-price">12500 Р.</p>
     <div class="on-hover">
       <a class="buy-button" href="#">Купить</a>
@@ -212,7 +212,7 @@
       <img src="img/item-image-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
     </a>
     <h3 class="catalog-category">Перфоратор BOSCH BFG 2000</h3>
-    <p class="sale-price"></p>
+    <p class="sale-price invisible">12500 Р.</p>
     <p class="catalog-item-price">12500 Р.</p>
     <div class="on-hover">
       <a class="buy-button" href="#">Купить</a>
@@ -251,7 +251,7 @@
       <img src="img/item-image-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
     </a>
     <h3 class="catalog-category">Перфоратор BOSCH BFG 2000</h3>
-    <p class="sale-price"></p>
+    <p class="sale-price invisible">12500 Р.</p>
     <p class="catalog-item-price">12500 Р.</p>
     <div class="on-hover">
       <a class="buy-button" href="#">Купить</a>

@@ -126,15 +126,15 @@ header {
   background-color: #161d29;
 }
 
-.catalog-busket {
+.catalog-basket {
   background-color:#ee3643;
 }
 
-.catalog-busket:hover {
+.catalog-basket:hover {
   background-color: #ca2c37;
 }
 
-.catalog-busket:active {
+.catalog-basket:active {
   background-color: #ba2732;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -352,61 +352,51 @@ nav a:active {
 /*Большие иконки и слайдер*/
 .icons-top {
   display: flex;
-  padding-top:59px;
+  margin-top:59px;
 }
 
 .icons-top p {
   margin:0px;
-  margin-top: 26px;
-  margin-bottom: 16px;
-  margin-left: 23px;
-  margin-right: 23px;
 }
 
 .icons-bottom {
   display: flex;
-  position: relative;
   margin-top: 20px;
 }
 
 .icons-bottom p {
   margin:0px;
-  margin-top: 26px;
-  margin-bottom: 16px;
-  margin-left: 23px;
 }
 
 .icons-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding:0px;
-  margin-left: 20px;
-  margin-left: 20px;
-
   width: 300px;
   height: 123px;
-
+  padding:0px;
+  margin-left: 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: white;
+  outline: 2px solid yellow;
 }
 
-.icons-item a {
+.icons-button {
   color: white;
+  background-color: rgba(0,0,0,0.1);
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
+  display: block;
+  margin:0px;
+  width: 135px;
+  min-height: 38px;
 }
 
 .materials-icon {
   background-color: #ffbf47;
-
   margin-left: 0px;
 }
 
@@ -427,17 +417,6 @@ nav a:active {
   margin-top: 20px;
 }
 
-.icons-button {
-  color: white;
-  background-color: rgba(0,0,0,0.1);
-
-  display: block;
-  width: 135px;
-  min-height: 38px;
-  margin-left:23px;
-  margin-bottom:22px;
-}
-
 .icons-button:hover {
   color: white;
   background-color: rgba(0,0,0,0.2);
@@ -455,11 +434,14 @@ nav a:active {
 }
 
 .slide-1 {
-  position: relative;
+  display: block;
+  width: 620px;
+  height: 266px;
+  background-image: url(../img/slider-image.jpg);
 }
 
-.slide-1 h2 {
-  position: absolute;
+.slider-1 h2 {
+
   margin:0px;
   top:22px;
   left:24px;
@@ -470,8 +452,7 @@ nav a:active {
   text-transform: uppercase;
 }
 
-.slide-1 p {
-  position: absolute;
+.slider-1 p {
   margin:0px;
   top:65px;
   left:25px;
@@ -481,16 +462,20 @@ nav a:active {
 
 .slide-2 {
   display: none;
+  width: 620px;
+  height: 266px;
+  background-image: url(../img/slider-image-2.jpg);
 }
 
-.open-catalog {
+.slider-1 .open-catalog {
   display: block;
-  position: absolute;
   width: 195px;
   height: 38px;
   left:25px;
   bottom:22px;
   text-align: center;
+  line-height: 38px;
+
 }
 
 .arrows {
@@ -518,14 +503,17 @@ nav a:active {
 }
 
 .popular-items-name a {
-  margin-right: 79px;
-  padding: 14px 55px 14px 55px;
+  display: block;
+  width: 253px;
+  height: 38px;
+  margin-right: 24px;
 
   background-color: #ee3643;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   color:white;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .popular-items-name h2 {
@@ -616,6 +604,7 @@ nav a:active {
   margin: 0px;
   margin-right: 20px;
   margin-top: 21px;
+  padding-bottom: 21px;
 }
 
 .catalog-list .catalog-item:nth-child(3n) {
@@ -732,12 +721,15 @@ nav a:active {
 .popular-producers a {
  background-color: #ee3643;
  font-size: 14px;
- line-height: 18px;
+ line-height: 38px;
  color:white;
  text-transform: uppercase;
+ text-align: center;
 
- margin-right: 70px;
- padding: 13px 70px 13px 69px;
+  display: block;
+  width: 253px;
+  height: 38px;
+  margin-right: 24px;
 }
 
 .popular-producers a:hover {
@@ -1075,23 +1067,6 @@ fieldset legend {
   margin-bottom: 12px;
 }
 
-/* Hide the browser's default checkbox */
-.filter-checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.filter-radio input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
 /* Create a custom checkbox */
 .checkmark-box {
   position: absolute;
@@ -1279,12 +1254,12 @@ fieldset legend {
 
 .pagination-item a:hover,
 .pagination-item-next a:hover {
-  border: 1px solid #bdc6ca;
+  outline: 1px solid #bdc6ca;
 }
 
 .pagination-item a:active,
 .pagination-item-next a:active {
-  border: 1px solid #ee3643;
+  outline: 1px solid #ee3643;
 }
 
 .pagination-item a:focus {
@@ -1295,7 +1270,7 @@ fieldset legend {
 /*ПАГИНАЦИЯ КОНЕЦ*/
 
 .about-tool {
-  background-color:#f9f5f0;
+  background-color:#f4f7f9;
   color: black;
   padding-top: 67px;
   padding-bottom: 73px;
@@ -1642,6 +1617,9 @@ fieldset legend {
   overflow: hidden;
 }
 
+.invisible {
+  opacity: 0;
+}
 /*FOOTER*/
 footer {
   background-color: #32425c;
