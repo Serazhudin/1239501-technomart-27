@@ -26,8 +26,8 @@
     <section class="header-info">
       <div class="container">
        <h1>
-        Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта
-      </h1>
+      Интернет-магазин&nbsp строительных материалов&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp и инструментов для ремонта
+    </h1>
       <div class="adress-tel">
         <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="adress">г.Санкт-Петербург, ул.Б. Конюшенная, д.19/8</p>
@@ -82,7 +82,6 @@
             <h2>Перфораторы</h2>
             <p>Настоящие мужские игрушки</p>
             <a class="open-catalog" href="catalog.html">Открыть каталог</a>
-
           </li>
           <ul class="round-buttons">
             <li><button type="button" class="round-button-1"></button></li>
@@ -233,17 +232,17 @@
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем,<br>
+              Ведь мы неплохо заработаем,&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
               поднимая его на ваш этаж!</p>
          </div>
        </li>
        <li >
         <div class="guarantee-text">
           <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,<br>
-            а также в случае пожара, спровоцированного его возгоранием,<br>
+          <p>Если купленный у нас товар поломается или заискрит,&nbsp
+            а также в случае пожара, спровоцированного его возгоранием,&nbsp
             вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-            сгоревший товар на новый.<br>
+            сгоревший товар на новый.&nbsp
             Дом уж восстановите как-нибудь сами.</p>
         </div>
       </li>
@@ -264,10 +263,10 @@
   <div class="container">
   <section class="about">
     <h2>Компания "Техномарт"</h2>
-    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.<br>
+    <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и&nbsp строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.&nbsp
     </p>
       <ul class="about-list">
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:</p>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
@@ -278,7 +277,7 @@
 
   <section class="contacts">
     <h2>Контакты</h2>
-    <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
+    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
     <a href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург"></a>
     <a class="button" href="#">Заблудились? Напишите нам!</a>
   </section>
@@ -337,15 +336,17 @@
 <section class="modal modal-contact" >
   <div class="red-shadow">
     <form class="contact-form" action="https://echo.technomart.ru" method="post">
-      <label >Ваше имя:<input class="user-name" type="text" name="name" placeholder="Имя Фамилия" ></label>
-      <label >Ваш e-mail:<input class="user-email" type="email" name="name" placeholder="email@example.com" ></label>
-      <label >Текст письма:<textarea name="text-modal-contact" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
-      <div class="contact-form-bottom">
-        <button class="button" type="submit">Отправить</button>
+      <div class="form-form">
+      <label for="user-name">Ваше имя:</label><input class="user-name" type="text" id="user-name" name="name" placeholder="Имя Фамилия" ></label>
+      <label for="user-email">Ваш e-mail:</label><input class="user-email" type="email" id="user-email" name="name" placeholder="email@example.com" >
       </div>
-      <button class="modal-close" type="button">Крестик</button>
+      <label for="modal-text">Текст письма:</label><textarea name="text-modal-contact" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </form>
-  </div>
+    </div>
+    <div class="modal-contact-bottom">
+     <button class="button" type="submit">Отправить</button>
+     </div>
+
 </section>
 
 <section class="modal modal-map">
@@ -353,18 +354,16 @@
   <p>
     <img src="img/map.jpg" width="940" height="446" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург">
   </p>
-  <button class="modal-close" type="button">Крестик</button>
 </section>
 
 <section class="modal modal-catalog">
   <div class="red-shadow">
-    <p class="busket-success">Товар добавлен в корзину!</p>
-    <div class="modal-catalog-bottom">
-      <a href="#" class="finish-order">Оформить заказ</a>
-      <button class="modal-continue" type="button" >Продолжить покупки</button>
-      <button class="modal-close" type="button">Крестик</button>
-    </div>
+  <p class="busket-success">Товар добавлен в корзину!</p>
+  <div class="modal-bottom">
+  <a href="#" class="finish-order">Оформить заказ</a>
+  <button class="modal-continue" type="button" >Продолжить покупки</button>
   </div>
+</div>
 </section>
 
 </body>
