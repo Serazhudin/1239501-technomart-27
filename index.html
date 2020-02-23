@@ -222,7 +222,7 @@
     <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     <div class="service-slider-menu">
       <ul class="service-menu">
-        <li><button class="button" autofocus>Доставка</button></li>
+        <li><button class="button active" autofocus>Доставка</button></li>
         <li><button class="button">Гарантия</button></li>
         <li><button class="button">Кредит</button></li>
       </ul>
@@ -288,7 +288,7 @@
 <footer>
    <div class="footer-top">
     <div class="container">
-        <a class="logo" href="index.html"></a>
+        <a class="logo logo-footer" href="index.html"></a>
         <div class="footer-menu">
           <ul class="footer-menu-white">
             <li><a href="#">Компания</a></li>
@@ -336,9 +336,11 @@
 <section class="modal modal-contact" >
   <div class="red-shadow">
     <form class="contact-form" action="https://echo.technomart.ru" method="post">
+      <div class="form-cont">
       <div class="form-form">
-      <label for="user-name">Ваше имя:</label><input class="user-name" type="text" id="user-name" name="name" placeholder="Имя Фамилия" ></label>
-      <label for="user-email">Ваш e-mail:</label><input class="user-email" type="email" id="user-email" name="name" placeholder="email@example.com" >
+      <label for="user-name">Ваше имя:</label><input class="user-name" type="text" id="user-name" name="name" placeholder="Имя Фамилия" ></div>
+      <div class="form-form">
+      <label for="user-email">Ваш e-mail:</label><input class="user-email" type="email" id="user-email" name="name" placeholder="email@example.com"></div>
       </div>
       <label for="modal-text">Текст письма:</label><textarea name="text-modal-contact" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </form>

@@ -68,11 +68,12 @@ header {
   background-image: url(../img/logo-top.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  text-align: center;
-  vertical-align: middle;
-
-  width: 220px;
   box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
+  width: 220px;
+}
+
+.logo-footer {
+  box-shadow: 0px 5px 0px 0px #b52933;
 }
 
 .logo:hover {
@@ -105,7 +106,6 @@ header {
   background-repeat: no-repeat;
   background-position: 0 50%;
   outline: 1px solid yellow;
-  opacity: 0.3;
 }
 
 .basket {
@@ -155,7 +155,6 @@ header {
 
   background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
-  outline: 1px solid yellow;
 }
 
 .search:hover {
@@ -283,24 +282,25 @@ header {
   text-decoration: underline;
 }
 
-.header-info .cabinet-link::before {
-  content: "";
+.header-info .login-area-diamond {
   position: absolute;
-
   width: 4px;
   height: 4px;
   background-color: #32425c;
 
-  left:-16px;
-  top:50%;
-  margin-top:-2px;
+  top:-55%;
+  left:43%;
+
+
   transform: rotate(45deg);
 }
 
 .header-info .user-name {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 37px;
   color: black;
+
+  text-align: center;
 }
 
 .header-info .user-name::before {
@@ -312,16 +312,14 @@ header {
 
   top: 50%;
   left: 5%;
-  margin-top: -14px;
-
+  margin-top: -10px;
   background-image: url(../img/icon-user.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
-  outline: 1px solid yellow;
+
 }
 
-.header-info .user-name::after {
-  content: "";
+.header-info .logout-link {
   position: absolute;
 
   width: 20px;
@@ -346,6 +344,7 @@ header {
 
 .login-area-bottom {
   display: flex;
+  position: relative;
   margin:0px;
   padding:0px;
 }
@@ -399,11 +398,11 @@ header {
   opacity: 0.5;
 }
 
-.header-info .user-name:hover::after {
+.header-info .logout-link:hover {
   opacity: 1;
 }
 
-.header-info .user-name:active::after {
+.header-info .logout-link:active {
   opacity: 0.5;
 }
 
@@ -587,8 +586,7 @@ nav a:active {
   background-repeat: no-repeat;
 }
 
-.materials-icon::after {
-  content: "";
+.new-flag {
   position: absolute;
 
   width: 60px;
@@ -707,9 +705,6 @@ nav a:active {
   padding-left: 24px;
   width: 620px;
   height: 266px;
-  box-sizing: border-box;
-  padding-top: 27px;
-  padding-left: 24px;
   padding-bottom: 22px;
 }
 
@@ -880,21 +875,6 @@ nav a:active {
 
 .popular-items-list .catalog-item:nth-child(5n) {
   margin-left: 0px;
-}
-
-.popular-items-list .catalog-item:nth-child(4)::before {
-  content: "";
-  position: absolute;
-
-  width: 60px;
-  height: 59px;
-
-  top: 0;
-  left: 100%;
-  margin-left: -60px;
-
-  background-image: url(../img/new-flag.png);
-  background-repeat: no-repeat;
 }
 
 .catalog-list {
@@ -1267,6 +1247,11 @@ nav a:active {
 
 .service-menu .button:active,
 .service-menu .button:focus {
+  background-color: white;
+  color: #32425c;
+}
+
+.service-menu .active {
   background-color: white;
   color: #32425c;
 }
@@ -1939,9 +1924,9 @@ fieldset legend {
 .modal-contact .red-shadow {
   box-sizing: border-box;
   padding-top: 48px;
+  padding-bottom: 37px;
   padding-left: 81px;
   padding-right: 80px;
-  outline: 1px solid yellow;
 }
 
 .red-shadow::before {
@@ -1956,6 +1941,7 @@ fieldset legend {
 
   background-image: url(../img/modal-close.svg);
   background-repeat: no-repeat;
+  cursor:pointer;
 }
 
 .modal-contact label {
@@ -1969,12 +1955,19 @@ fieldset legend {
 .contact-form {
   display: flex;
   flex-direction: column;
-  outline: 1px solid yellow;
   width: 460px;
+}
+
+.form-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
 }
 
 .form-form {
   display: flex;
+  width: 220px;
+  flex-direction: column;
 }
 
 .user-name,
@@ -2023,9 +2016,19 @@ fieldset legend {
   line-height: 18px;
   text-transform: uppercase;
   border:none;
+  outline:none;
   display: block;
   width: 460px;
   height: 38px;
+}
+
+.modal-contact-bottom .button:hover {
+  background-color:#ca2c37;
+}
+
+.modal-contact-bottom .button:active {
+  background-color:#ba2732;
+  outline:none;
 }
 
 .modal-map {
@@ -2050,6 +2053,7 @@ fieldset legend {
 
   background-image: url(../img/modal-close.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .modal-catalog {
@@ -2276,7 +2280,8 @@ footer {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
-
+  box-sizing: border-box;
+  padding:0px;
   padding-top:39px;
   padding-bottom:35px;
 }
@@ -2294,6 +2299,7 @@ footer {
   width: 228px;
   height: 33px;
   white-space: pre;
+  margin:0px;
   margin-right: 161px;
 }
 
@@ -2301,6 +2307,7 @@ footer {
   list-style: none;
   display: flex;
   position: relative;
+  margin:0px;
   padding:0px;
   margin-right: 119px;
   width: 132px;
@@ -2312,21 +2319,25 @@ footer {
   margin:0px;
 }
 
-.footer-social .vk::before,
-.footer-social .fb::before,
-.footer-social .instagram::before {
-  content: "";
-  position: absolute;
-
+.footer-social a {
+  display: block;
   width: 42px;
   height: 42px;
+  margin:0px;
+  padding:0px;
   border-radius: 50%;
   background-color:#212a3a;
-
-  left: 0;
 }
 
-.footer-social .vk::after {
+.footer-social .fb {
+  margin-left: 3px;
+}
+
+.footer-social .instagram {
+  margin-left: 3px;
+}
+
+.footer-social .vk::before {
   content: "";
   position: absolute;
 
@@ -2342,10 +2353,6 @@ footer {
 }
 
 .footer-social .fb::before {
-  left: 45px;
-}
-
-.footer-social .fb::after {
   content: "";
   position: absolute;
 
@@ -2353,19 +2360,14 @@ footer {
   height: 22px;
 
   top: 50%;
-  left: 50%;
   margin-top: -11px;
-  margin-left: 2px;
+  margin-left: 15px;
 
   background-image: url(../img/icon-fb.svg);
   background-repeat: no-repeat;
 }
 
 .footer-social .instagram::before {
-    left: 90px;
-}
-
-.footer-social .instagram::after {
   content: "";
   position: absolute;
 
@@ -2373,8 +2375,8 @@ footer {
   height: 21px;
 
   top: 50%;
-  left: 87%;
   margin-top: -10px;
+  margin-left: 11px;
 
   background-image: url(../img/icon-instagram.svg);
   background-repeat: no-repeat;
@@ -2384,11 +2386,14 @@ footer {
   display: block;
   width: 135px;
   height: 32px;
-
+  margin:0px;
+  padding:0px;
   margin-right: 93px;
 }
 
 .developed-by {
+  margin:0px;
+  padding:0px;
   width: 96px;
   height: 34px;
 }
@@ -2401,12 +2406,9 @@ footer {
   opacity: 0.5;
 }
 
-.footer-social .vk:hover::before,
-.footer-social .fb:hover::before,
-.footer-social .instagram:hover::before,
-.footer-social .vk:active::before,
-.footer-social .fb:active::before,
-.footer-social .instagram:active::before {
+.footer-social .vk:hover,
+.footer-social .fb:hover,
+.footer-social .instagram:hover {
   background-color:#ee3643;
   opacity: 1;
 }
