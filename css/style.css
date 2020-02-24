@@ -1406,14 +1406,22 @@ fieldset legend {
   text-transform: uppercase;
 }
 
-/* Customize the label (the container) */
+/* Стилизация чекбокса */
 .filter-checkbox {
-  display: block;
+
   position: relative;
-  padding-left: 35px;
   margin-bottom: 12px;
 }
 
+.filter-checkbox label {
+  padding-left:35px;
+}
+
+.filter-checkbox input {
+  margin-left:35px;
+}
+
+/* Стилизация радиокнопки */
 .filter-radio {
   display: block;
   position: relative;
@@ -1421,8 +1429,8 @@ fieldset legend {
   margin-bottom: 12px;
 }
 
-/* Create a custom checkbox */
-.checkmark-box {
+/* Создание кастомного квадрата под чекбокс */
+.filter-checkbox input[type="checkbox"] + .checkmark-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -1431,7 +1439,8 @@ fieldset legend {
   border:2px solid #c5c5c5;
 }
 
-.checkmark-radio {
+/* Создание кастомного круга под рабиокнопку */
+.filter-radio input[type="radio"] + .checkmark-radio {
   position: absolute;
   top: 0;
   left: 0;
@@ -1440,6 +1449,55 @@ fieldset legend {
   border:2px solid #c5c5c5;
   border-radius: 50%;
 }
+
+.filter-checkbox input[type="checkbox"]:checked + .checkmark-box::before {
+  content: "";
+  position: absolute;
+
+  height:10px;
+  width: 0px;
+  left: 5px;
+  top: 5px;
+  border:2px solid #c5c5c5;
+  transform: rotate(-45deg);
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkmark-box::after {
+  content: "";
+  position: absolute;
+
+  height:0px;
+  width: 20px;
+  left: 7px;
+  top: 7px;
+  border:2px solid #c5c5c5;
+  transform: rotate(-45deg);
+}
+
+.filter-radio input[type="radio"]:checked + .checkmark-radio::before {
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+}
+
+.filter-radio input[type="radio"]:checked + .checkmark-radio::after {
+  content: "";
+  position: absolute;
+
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
 
 .filter-checkbox input:checked ~ .checkmark-box,
 .filter-radio input:checked ~ .checkmark-radio {
@@ -1937,11 +1995,19 @@ fieldset legend {
 }
 
 /*Index О компании и Контакты КОНЕЦ*/
-
+.modal {
+  position: fixed;
+  background-color: white;
+}
 
 .modal-contact {
+  display: none;
+  top:50%;
+  left:0%;
   width: 620px;
   height: 430px;
+  margin-top:-215px;
+  margin-left:310px;
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -2012,17 +2078,17 @@ fieldset legend {
 
 .contact-form input,
 .contact-form textarea {
-  border: 1px solid #dee3e4;
+  outline: 1px solid #dee3e4;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  border: 2px solid  #b5b5b5;
+  outline: 2px solid  #b5b5b5;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border: 2px solid  #ee3643;
+  outline: 2px solid  #ee3643;
 }
 
 .contact-form input::placeholder,
