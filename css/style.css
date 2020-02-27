@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 23px;
-  font-weight: 400;
+  font-weight: normal;
   color: white;
 
   background-color: white;
@@ -34,6 +36,8 @@ header {
 }
 
 .top-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -49,13 +53,18 @@ header {
   background-image: url(../img/logo-top.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.24);
   width: 220px;
 }
 
 .footer-top .logo {
   height: 68px;
-  box-shadow: 0px 5px 0px 0px #b52933;
+  -webkit-box-shadow: 0px 5px 0px 0px #b52933;
+          box-shadow: 0px 5px 0px 0px #b52933;
+  background-image: url(../img/logo-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .logo:hover {
@@ -86,7 +95,8 @@ header {
 
 .bookmark {
   position: relative;
-  flex-basis: 150px;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
   padding-top: 14px;
   padding-bottom: 13px;
 }
@@ -103,7 +113,8 @@ header {
 
 .basket {
   position: relative;
-  flex-basis: 150px;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
   padding-top: 14px;
   padding-bottom: 13px;
 }
@@ -124,7 +135,28 @@ header {
   width: 270px;
   padding-top: 14px;
   padding-bottom: 16px;
+  padding-left: 35px;
   border: none;
+}
+
+.search::-webkit-input-placeholder {
+  padding-left: 40px;
+  color: white;
+}
+
+.search::-moz-placeholder {
+  padding-left: 40px;
+  color: white;
+}
+
+.search:-ms-input-placeholder {
+  padding-left: 40px;
+  color: white;
+}
+
+.search::-ms-input-placeholder {
+  padding-left: 40px;
+  color: white;
 }
 
 .search::placeholder {
@@ -151,6 +183,15 @@ header {
 }
 
 .search:hover + svg {
+  opacity: 1;
+}
+
+.search:focus + svg path {
+  fill:#ee3643;
+  opacity: 1;
+}
+
+.search:focus + svg {
   opacity: 1;
 }
 
@@ -193,6 +234,8 @@ header {
 /*Средняя часть хедера*/
 
 .header-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top:46px;
   padding-bottom:44px;
@@ -284,7 +327,11 @@ header {
   top:-55%;
   left:43%;
 
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+      -ms-transform: rotate(45deg);
+
+          transform: rotate(45deg);
 }
 
 .header-info .user-name {
@@ -327,14 +374,23 @@ header {
 }
 
 .login-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 51px;
 }
 
 .login-area-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin:0px;
@@ -342,10 +398,16 @@ header {
 }
 
 .login-area-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width:299px;
   height: 45px;
   margin:0px;
@@ -402,8 +464,12 @@ header {
 /*для Каталога КОНЕЦ*/
 
 .header-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-left:auto;
 }
 
@@ -472,11 +538,15 @@ nav {
 }
 
 nav .container {
-  background-color: #32425c;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 5px 0px 0px #293449;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav a {
@@ -486,6 +556,9 @@ nav a {
   padding-bottom: 23px;
   padding-right: 32px;
   padding-left: 32px;
+  background-color: #32425c;
+  -webkit-box-shadow: 0px 5px 0px 0px #293449;
+          box-shadow: 0px 5px 0px 0px #293449;
 }
 
 nav a:hover {
@@ -506,6 +579,8 @@ nav a:active {
 
 /*Большие иконки и слайдер*/
 .icons-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top:59px;
 }
@@ -515,6 +590,8 @@ nav a:active {
 }
 
 .icons-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
@@ -524,7 +601,8 @@ nav a:active {
 }
 
 .icons-item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 300px;
   height: 123px;
   padding:0px;
@@ -576,15 +654,21 @@ nav a:active {
   background-repeat: no-repeat;
 }
 
-.new-flag {
+.materials-icon::before,
+.popular-items-list .catalog-item:nth-child(4)::before,
+.catalog-list .catalog-item:nth-child(3)::before,
+.catalog-list .catalog-item:nth-child(5)::before,
+.catalog-list .catalog-item:nth-child(7)::before {
+  content: "";
   position: absolute;
 
   width: 60px;
   height: 59px;
 
-  top: 0;
+  top: 0%;
   left: 100%;
   margin-left: -60px;
+  margin-top: 0px;
   z-index: 1;
 
   background-image: url(../img/new-flag.png);
@@ -691,7 +775,8 @@ nav a:active {
 
 .slide-1,
 .slide-2 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 27px;
   padding-left: 24px;
   width: 620px;
@@ -700,9 +785,14 @@ nav a:active {
 }
 
 .slide-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url(../img/slider-image.jpg);
 }
 
@@ -745,6 +835,7 @@ nav a:active {
   margin-top: -20px;
   background-image: url(../img/icon-left.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 
@@ -757,10 +848,13 @@ nav a:active {
   margin-top: -20px;
   background-image: url(../img/icon-right.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 
 .round-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: absolute;
   list-style: none;
@@ -772,9 +866,15 @@ nav a:active {
 /*Популярные товары Заголовк + Кнопка*/
 
 .popular-items-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 53px;
 
   background-color:#f9f5f0;
@@ -801,6 +901,7 @@ nav a:active {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
 }
 
 .popular-items-name a:hover {
@@ -815,8 +916,11 @@ nav a:active {
 /*Популярные товары*/
 
 .popular-items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -824,11 +928,16 @@ nav a:active {
 }
 
 .catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .general-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 940px;
   margin:  0 auto;
@@ -841,23 +950,37 @@ nav a:active {
 }
 
 .right-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 700px;
 
   padding: 0px;
 }
 
-.popular-items-list .catalog-item {
+.popular-items-list li {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 220px;
   padding: 0px;
   margin-left: 17px;
   margin-top: 20px;
   padding-bottom: 21px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .popular-items-list .catalog-item:nth-child(1) {
@@ -869,22 +992,36 @@ nav a:active {
 }
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
 }
 
 .catalog-list .catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 218px;
   margin: 0px;
   margin-right: 20px;
   margin-top: 21px;
   padding-bottom: 21px;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .catalog-list .catalog-item:nth-child(3n) {
@@ -906,6 +1043,7 @@ nav a:active {
 
   font-size: 17px;
   line-height:18px;
+  font-weight: 600;
   color: white;
   background-color: #ee3643;
   border-radius: 3px;
@@ -959,18 +1097,31 @@ nav a:active {
   list-style: none;
   padding: 0px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 65px;
 }
 
 .catalog-link {
   width: 220px;
   height: 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popular-producers-list li {
@@ -985,12 +1136,14 @@ nav a:active {
 }
 
 .popular-producers-list li:hover {
-  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .popular-producers-list li:active,
 .popular-producers-list li:focus {
-  box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+          box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
 
 
@@ -998,9 +1151,17 @@ nav a:active {
 .popular-producers {
   background-color:#f9f5f0;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .popular-producers h2 {
@@ -1008,7 +1169,7 @@ nav a:active {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
-
+  font-weight: normal;
   padding-left: 30px;
 }
 
@@ -1071,6 +1232,8 @@ nav a:active {
 }
 
 .service-slider-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0px;
 
@@ -1092,6 +1255,8 @@ nav a:active {
 }
 
 .service-slider li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1120,9 +1285,16 @@ nav a:active {
 }
 
 .delivery-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 
   margin-left: 80px;
   margin-bottom: 135px;
@@ -1137,8 +1309,13 @@ nav a:active {
 }
 
 .guarantee-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   margin-left: 80px;
   margin-bottom: 135px;
@@ -1152,8 +1329,13 @@ nav a:active {
 }
 
 .credit-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
   margin-left: 80px;
   margin-bottom: 135px;
@@ -1249,10 +1431,14 @@ nav a:active {
 
 /*ХЛЕБНЫЕ КРОШКИ*/
 .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0px;
   list-style: none;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left:54px;
 }
 
@@ -1398,13 +1584,13 @@ fieldset legend {
 
 /* Стилизация чекбокса */
 .filter-checkbox {
-
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
 }
 
 .filter-checkbox label {
   padding-left:35px;
+  position: relative;
 }
 
 .filter-checkbox input {
@@ -1416,31 +1602,37 @@ fieldset legend {
   display: block;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 /* Создание кастомного квадрата под чекбокс */
-.filter-checkbox input[type="checkbox"] + .checkmark-box {
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   height: 23px;
   width: 23px;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+
   border:2px solid #c5c5c5;
 }
 
 /* Создание кастомного круга под рабиокнопку */
-.filter-radio input[type="radio"] + .checkmark-radio {
+.filter-radio label::before {
+  content: "";
   position: absolute;
-  top: 0;
+  height: 25px;
+  width: 25px;
+  top: 50%;
   left: 0;
-  height: 23px;
-  width: 23px;
-  border:2px solid #c5c5c5;
+  margin-top: -15px;
+  border:4px solid #c5c5c5;
   border-radius: 50%;
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkmark-box::before {
+/* Индикатор чекбокса - галочка*/
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
 
@@ -1449,10 +1641,12 @@ fieldset legend {
   left: 5px;
   top: 5px;
   border:2px solid #c5c5c5;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkmark-box::after {
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
 
@@ -1461,90 +1655,43 @@ fieldset legend {
   left: 7px;
   top: 7px;
   border:2px solid #c5c5c5;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
-.filter-radio input[type="radio"]:checked + .checkmark-radio::before {
+/* Индикатор радиокнопки - круг*/
+.filter-radio input[type="radio"]:checked + label::after  {
   content: "";
   position: absolute;
-
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  top: 0%;
+  left: 0%;
+  margin-top: 7px;
+  margin-left: 11px;
   border-radius: 50%;
   background-color: #c5c5c5;
 }
 
-.filter-radio input[type="radio"]:checked + .checkmark-radio::after {
-  content: "";
-  position: absolute;
-
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
-
-
-.filter-checkbox input:checked ~ .checkmark-box,
-.filter-radio input:checked ~ .checkmark-radio {
-  border:2px solid #c5c5c5;
-}
-
-/* On mouse-over, add a grey background color */
-.filter-checkbox:hover input ~ .checkmark-box,
-.filter-checkbox:hover input ~ label {
+/* Состояния фильтра */
+.filter-checkbox:hover label .checkbox-indicator,
+.filter-checkbox:hover input[type="checkbox"]:checked + .checkbox-indicator::before,
+.filter-checkbox:hover input[type="checkbox"]:checked + .checkbox-indicator::after,
+.filter-radio:hover label::before,
+.filter-radio:hover input[type="radio"]:checked + label::after  {
   border-color: #b5b5b5;
   color: #b5b5b5;
 }
 
-.filter-radio:hover input ~ .checkmark-radio,
-.filter-radio:hover input ~ label {
-  border-color: #b5b5b5;
-  color: #b5b5b5;
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator,
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::before,
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator::after,
+.filter-radio input[type="radio"]:disabled + label::before,
+.filter-radio input[type="radio"]:disabled + label::after  {
+  opacity: 0.3;
 }
 
-.filter-checkbox:checked:hover input ~ .checkmark-box {
-  border-color: #b5b5b5;
-}
-
-.filter-radio:checked:hover input ~ .checkmark-radio {
-  border-color: #b5b5b5;
-}
-
-/* When the checkbox is checked*/
-.filter-checkbox input:disabled ~ .checkmark-box {
-  opacity:0.3;
-}
-
-.filter-checkbox input:checked:disabled ~ .checkmark-box {
-  opacity:0.3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* ??? Show the checkmark when checked */
-.filter-checkbox input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.filter-checkbox .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-}
 /*Фильтр КОНЕЦ*/
 
 /*СОРТИРОВКА*/
@@ -1556,8 +1703,12 @@ fieldset legend {
 }
 
 .sorting-list {
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- align-items: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
  list-style: none;
  text-transform: uppercase;
  margin: 0px;
@@ -1656,6 +1807,8 @@ fieldset legend {
 
 .pagination-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0px;
   margin: 0px;
@@ -1679,9 +1832,15 @@ fieldset legend {
   display: block;
   width: 140px;
   height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pagination-item a {
@@ -1689,9 +1848,15 @@ fieldset legend {
   display: block;
   width: 38px;
   height: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pagination-item a:hover,
@@ -1722,6 +1887,7 @@ fieldset legend {
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
 }
 
 .about-tool p {
@@ -1773,6 +1939,8 @@ fieldset legend {
   height: 88px;
   padding: 40px 0;
 
+  font-size: 14px;
+  font-weight: normal;
   background-color: rgba(255,255,255,0.9);
   text-transform: uppercase;
 }
@@ -1784,9 +1952,9 @@ fieldset legend {
   margin: 0 auto;
   margin-bottom: 8px;
 
+  line-height: 38px;
   background-color:#63a63e;
   color: white;
-  line-height: 38px;
   border-bottom: 3px inset #367315;
   border-radius:3px;
 }
@@ -1797,12 +1965,13 @@ fieldset legend {
   height: 38px;
   margin: 0 auto;
 
+  line-height: 32px;
   background-color:white;
-  box-sizing: border-box;
-  border: 3px inset #63a63e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 3px solid #63a63e;
   border-radius:3px;
   color: #32425c;
-  line-height: 38px;
 }
 
 .catalog-item:hover .on-hover {
@@ -1815,11 +1984,12 @@ fieldset legend {
 
 .buy-button:active {
   background-color:#518534;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .bookmark-button:hover {
-  border: 3px solid #32425c;
+   border: 3px solid #32425c;
 }
 
 .bookmark-button:active {
@@ -1834,6 +2004,8 @@ fieldset legend {
 /*Index О компании и Контакты*/
 
 .about-and-contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding:0px;
   margin-top:82px;
@@ -1841,8 +2013,13 @@ fieldset legend {
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font: inherit;
   color: black;
   background-color: white;
@@ -1855,8 +2032,13 @@ fieldset legend {
 }
 
 .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font: inherit;
   color: black;
   background-color: white;
@@ -1894,9 +2076,16 @@ fieldset legend {
 }
 
 .about-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   width: 386px;
   height: 161px;
@@ -1928,7 +2117,7 @@ fieldset legend {
 
   width: 10px;
   height: 2px;
-  background-color:black;
+  background-color:#ee3643;
 
   top: 50%;
   left: 0%;
@@ -2000,7 +2189,8 @@ fieldset legend {
   height: 430px;
   margin-top:-215px;
   margin-left:310px;
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-catalog {
@@ -2011,7 +2201,8 @@ fieldset legend {
   height: 282px;
   margin-top:-141px;
   margin-left:310px;
-  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-map {
@@ -2026,21 +2217,31 @@ fieldset legend {
 }
 
 .modal-map img {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .modal-catalog .red-shadow,
 .modal-contact .red-shadow {
-  box-shadow: 0px -7px 0px  0px #ee3643;
+  -webkit-box-shadow: 0px -7px 0px  0px #ee3643;
+          box-shadow: 0px -7px 0px  0px #ee3643;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding: 0px;
 }
 
 .modal-contact .red-shadow {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 48px;
   padding-bottom: 37px;
   padding-left: 81px;
@@ -2070,21 +2271,35 @@ fieldset legend {
 }
 
 .contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 460px;
 }
 
 .modal-form-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 22px;
 }
 
 .modal-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 220px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .user-name,
@@ -2108,6 +2323,34 @@ fieldset legend {
   outline: 2px solid  #ee3643;
 }
 
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color:#a9a9a9;
+}
+
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color:#a9a9a9;
+}
+
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color:#a9a9a9;
+}
+
+.contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+  line-height: 18px;
+  color:#a9a9a9;
+}
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   font-size: 13px;
@@ -2118,9 +2361,15 @@ fieldset legend {
 
 .modal-contact-bottom {
   background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 620px;
   height: 112px;
 }
@@ -2180,11 +2429,16 @@ fieldset legend {
   background-color: #f4f4f4;
   width: 620px;
   height: 112px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: auto;
   padding-top: 37px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .finish-order,
@@ -2250,12 +2504,15 @@ footer {
 }
 
 .footer-top .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 
-
   font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: normal;
 }
 
 .footer-menu {
@@ -2268,50 +2525,57 @@ footer {
 }
 
 .footer-menu-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+
+      flex-wrap: wrap;
 
   width: 547px;
   list-style: none;
   margin:0px;
   padding: 0px;
   margin-top:42px;
+
 }
 
 .footer-menu-white li {
   padding:0px;
   margin:0px;
-  margin-right: 58px;
+  padding-right: 58px;
   margin-bottom: 10px;
-
 }
 
 .footer-menu-white li:nth-child(5) {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .footer-menu-colored {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0px;
   margin:0px;
   padding-left: 23px;
   margin-top:45px;
-
 }
 
 .footer-menu-colored li {
   padding:0px;
   margin:0px;
-  margin-right: 59px;
+  padding-right: 58px;
 
   margin-bottom: 10px;
 }
 
 .footer-menu-colored li:nth-child(4) {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 
 .footer-menu a {
@@ -2345,13 +2609,16 @@ footer {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding:0px;
   padding-top:39px;
   padding-bottom:35px;
 }
 
 .footer-bottom .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -2370,6 +2637,8 @@ footer {
 
 .footer-social {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   margin:0px;
@@ -2453,7 +2722,7 @@ footer {
   height: 32px;
   margin:0px;
   padding:0px;
-  margin-right: 93px;
+  margin-right: 53px;
 }
 
 .developed-by {
