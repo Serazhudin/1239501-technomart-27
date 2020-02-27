@@ -86,12 +86,21 @@
  <section class="filter">
   <form action="https://echo.htmlacademy.ru" method="post" oninput="price1.value=price1.value">
     <h2>Фильтр:</h2>
-    <fieldset>
+    <fieldset class="filter-item">
       <legend>Цена:</legend>
-      <input type="range" name="price1" id="price1" min="0" max="30000" step="1">
-      <p class="price-output">
-        <output name="price1"></output>
-      </p>
+      <div class="filter-range">
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="toggle toggle-min"></div>
+        <div class="toggle toggle-max"></div>
+      </div>
+      <div class="price-controls">
+        <input name="min-price" type="number" value="0">
+      <label class="max-price"><input name="max-price" type="number" value="30000"></label>
+      </div>
+      </div>
     </fieldset>
     <fieldset>
       <legend >Производители:</legend>
