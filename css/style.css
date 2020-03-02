@@ -47,6 +47,19 @@ header {
   text-align: center;
 }
 
+.top-bar form {
+  position: relative;
+}
+
+.top-bar label {
+  position: absolute;
+  opacity: 0.3;
+  left: 0%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: 15px;
+}
+
 .top-bar a {
   color: white;
   font-size:17px;
@@ -127,11 +140,12 @@ header {
   background-color:white;
 }
 
-.search:hover + svg {
+.search:hover + label,
+.top-bar label:hover {
   opacity: 1;
 }
 
-.search:focus + svg path {
+.search:focus + label path {
   fill:#ee3643;
   opacity: 1;
 }
@@ -246,8 +260,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top:44px;
-  padding-bottom:29px;
+  padding-top:42px;
+  padding-bottom:31px;
 }
 
 .header-info h1 {
@@ -513,8 +527,6 @@ header {
 
 .icons-top .new-tag::after,
 .popular-items-list .new-tag::before,
-.catalog-list .new-tag::before,
-.catalog-list .new-tag::before,
 .catalog-list .new-tag::before {
   content: "";
   position: absolute;
@@ -714,10 +726,38 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: relative;
   list-style: none;
   bottom: 36px;
   left: 295px;
+}
+
+.round-button-1 {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 22px;
+  bottom: 36px;
+  margin-top: -10px;
+  background-image: url(../img/slider-dots-red.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.round-button-2 {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 0%;
+  bottom: 36px;
+  margin-top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 /*Большие иконки и слайдер КОНЕЦ*/
 
@@ -822,6 +862,14 @@ header {
 
 .popular-items-list .catalog-item:nth-child(5n) {
   margin-left: 0px;
+}
+
+.popular-items-list .catalog-item:nth-child(4) img {
+  padding-left: 10px;
+}
+
+.catalog-link img {
+  padding-bottom: 10px;
 }
 
 .catalog-category {
@@ -1187,7 +1235,8 @@ header {
   padding-left:20px;
 }
 
-.service-menu .button:hover {
+.service-menu .button:not(.active):hover,
+.service-menu .button:not(.active):focus {
   background-color: #293449;
   color: white;
 }
@@ -1207,8 +1256,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.service-menu .active,
-.service-menu .active:hover {
+.service-menu .active {
   background-color: white;
   color: #32425c;
 }
@@ -1232,7 +1280,7 @@ header {
   display: flex;
   padding:0px;
   margin-top:85px;
-  margin-bottom:80px;
+  margin-bottom:84px;
 }
 
 .about {
@@ -1280,7 +1328,7 @@ header {
 
   margin:0px;
   padding:0px;
-  margin-bottom:27px;
+  margin-bottom:25px;
 }
 
 .about p,
@@ -1315,7 +1363,7 @@ header {
           justify-content: space-between;
 
   width: 386px;
-  height: 165px;
+  height: 176px;
 
   list-style:none;
   font: inherit;
@@ -1330,7 +1378,6 @@ header {
   margin:0px;
   padding: 0px;
   width: 386px;
-  margin-bottom: 10px;
 }
 
 .about-list li {
@@ -1366,21 +1413,20 @@ header {
 }
 
 .contacts .button {
-  margin-top:40px;
   display: block;
   width: 300px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-top:auto;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  margin-top:32px;
 }
 
 .about .button {
   margin:0px;
   display: block;
   width: 220px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-top:37px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  margin-top:30px;
 }
 
 .about .button:hover,
@@ -1594,6 +1640,11 @@ header {
   margin-right: 0px;
 }
 
+.catalog-list .catalog-item:nth-child(6) img,
+.catalog-list .catalog-item:nth-child(9) img {
+  margin-left:5px;
+}
+
 .sale-price {
   font-size: 17px;
   color:#999999;
@@ -1623,12 +1674,11 @@ header {
   position: relative;
 }
 
-.breadcrumbs li:nth-child(1) {
+.breadcrumbs li:nth-child(2) {
   margin-right: 39px;
 }
 
-.breadcrumbs li:nth-child(1)::before {
-  content: "";
+.breadcrumbs-home {
   position: absolute;
 
   width: 14px;
@@ -1643,9 +1693,9 @@ header {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs li:nth-child(1)::after,
-.breadcrumbs li:nth-child(2)::before,
-.breadcrumbs li:nth-child(3)::before {
+.breadcrumbs li:nth-child(2)::after,
+.breadcrumbs li:nth-child(3)::before,
+.breadcrumbs li:nth-child(4)::before {
   content: "";
   position: absolute;
 
@@ -1660,11 +1710,11 @@ header {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs li:nth-child(3)::before {
+.breadcrumbs li:nth-child(4)::before {
   margin-top: -6px;
 }
 
-.breadcrumbs li:nth-child(2) {
+.breadcrumbs li:nth-child(3) {
   margin-right: 43px;
 }
 
@@ -1689,7 +1739,7 @@ header {
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
   text-decoration: underline;
-  color:blue;
+  color:black;
 }
 /*Хлебные крошки Конец*/
 
@@ -1759,25 +1809,36 @@ fieldset legend {
   padding-bottom: 15px;
 }
 
+.filter-item {
+margin-bottom:6px;
+}
+
 .producers {
-  margin-bottom:-5px;
-  margin-top:-5px;
   position:relative;
 }
 
-.producers:before {
-content:"";
-position:absolute;
+.producers:before,
+.charge-type:before {
+  content:"";
+  position:absolute;
   background-color: #f7f3ec;
   height: 1px;
   width: 220px;
   border:none;
   outline: none;
-margin-bottom:-5px;
+  margin-bottom:-5px;
 }
 
 .charge-type {
-  margin-top:20px;
+  position:relative;
+}
+
+.filter-producers {
+  margin-bottom:10px;
+}
+
+.filter-charge {
+  margin-bottom:-15px;
 }
 
 .filter-range {
@@ -2071,7 +2132,7 @@ margin-bottom:-5px;
   width: 0px;
   height: 0px;
   border: 6px solid #ffffff;
-  border-color: #ee3643;
+  border-color: #c5c5c5;
   border-top-width: 0px;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -2127,7 +2188,7 @@ margin-bottom:-5px;
   display: flex;
   padding: 0px;
   margin: 0px;
-  margin-top: 52px;
+  margin-top: 50px;
   margin-bottom: 60px;
 }
 
@@ -2139,14 +2200,14 @@ margin-bottom:-5px;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   border-radius:3px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .pagination-item-next a {
   color: black;
   display: block;
-  width: 140px;
-  height: 38px;
+  width: 135px;
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2161,7 +2222,7 @@ margin-bottom:-5px;
 .pagination-item a {
   color: black;
   display: block;
-  width: 38px;
+  width: 36px;
   height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2203,13 +2264,16 @@ margin-bottom:-5px;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
+  margin-top:-5px;
 }
 
 .about-tool p {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  width: 911px;
+  width: 981px;
+  letter-spacing:0.4px;
+  margin-bottom:-5px;
 }
 
 /*Кнопки Купить и Взакладки Скрытые*/
