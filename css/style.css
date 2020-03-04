@@ -116,12 +116,12 @@ header {
 }
 
 .search:-ms-input-placeholder {
-  padding-left: 30px;
+  padding-left: 40px;
   color: white;
 }
 
 .search::-ms-input-placeholder {
-  padding-left: 30px;
+  padding-left: 40px;
   color: white;
 }
 
@@ -158,6 +158,17 @@ header {
 }
 
 .search:focus::placeholder {
+  color:black;
+}
+
+.search:focus::-webkit-input-placeholder {
+  color:black;
+}
+
+.search:focus:-ms-input-placeholder {
+  color:black;
+}
+.search:focus::-ms-input-placeholder {
   color:black;
 }
 
@@ -900,9 +911,11 @@ header {
   line-height: 20px;
   text-align: center;
 
+  width: 155px;
+  padding: 0px;
   margin:0px;
-  padding-right: 33px;
-  padding-left: 32px;
+  margin-right: 33px;
+  margin-left: 32px;
   margin-bottom: 11px;
   margin-top: 7px;
 }
@@ -1411,7 +1424,15 @@ header {
   margin-left: 35px;
 }
 
-.about-list li::before {
+.about-list li:first-child {
+  margin-left: 0px;
+}
+
+.about-list li:nth-child(4) {
+  margin-bottom: 5px;
+}
+
+.about-list li:not(:first-child)::before {
   content: "";
   position: absolute;
 
@@ -2996,7 +3017,6 @@ footer {
   margin:0px;
   padding:0px;
   width: 96px;
-  height: 34px;
 }
 
 .footer-menu a:active {
