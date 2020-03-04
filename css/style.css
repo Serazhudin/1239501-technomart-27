@@ -101,7 +101,7 @@ header {
   width: 270px;
   padding-top: 10px;
   padding-bottom: 11px;
-  padding-left: 35px;
+  padding-left: 40px;
   border: none;
 }
 
@@ -126,17 +126,16 @@ header {
 }
 
 .search::placeholder {
-  padding-left: 12px;
+  padding-left: 7px;
   color: white;
   font-size: 17px;
 }
 
-.search + svg {
+.search + label {
   position: absolute;
-  top: 5%;
-  left: 30%;
-  margin-top: -20px;
-  margin-left: 42px;
+  top: 25px;
+  left: 0;
+
   opacity: 0.3;
 }
 
@@ -148,6 +147,9 @@ header {
   color:black;
   background-color:white;
   height: 100%;
+  outline: none;
+  border: none;
+
 }
 
 .search:hover + label,
@@ -155,13 +157,13 @@ header {
   opacity: 1;
 }
 
+.search:focus::placeholder {
+  color:black;
+}
+
 .search:focus + label path,
 .search:focus + label {
   fill:#ee3643;
-  opacity: 1;
-}
-
-.search:focus + svg {
   opacity: 1;
 }
 
@@ -204,7 +206,7 @@ header {
   left: 0%;
   margin-top: -10px;
   margin-left: 18px;
-  background-image: url(../img/basket-hover.png);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
 }
@@ -250,14 +252,15 @@ header {
 }
 
 .basket:hover::before {
-  background-image: url(../img/basket-hover.png);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 1;
 }
 
 .basket:active::before {
-  background-image: url(../img/basket-active.png);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 .catalog-basket {
@@ -883,6 +886,10 @@ header {
   padding-bottom: 5px;
 }
 
+.popular-items-list li:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
 .catalog-link img {
   padding-bottom: 10px;
 }
@@ -1001,6 +1008,11 @@ header {
 .popular-producers-list li:focus {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
           box-shadow: 0px 4px 10px 0px rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-list li:active .catalog-link img,
+.popular-producers-list li:focus .catalog-link img{
+  opacity: 0.3;
 }
 
 /*Популярные производители Заголовк + Кнопка*/
@@ -1248,8 +1260,7 @@ header {
   padding-left:20px;
 }
 
-.service-menu .button:not(.active):hover,
-.service-menu .button:not(.active):focus {
+.service-menu .button:not(.active):hover {
   background-color: #293449;
   color: white;
 }
@@ -1269,7 +1280,8 @@ header {
   background-repeat: no-repeat;
 }
 
-.service-menu .active {
+.service-menu .active,
+.service-menu .button:not(.active):active {
   background-color: white;
   color: #32425c;
 }
@@ -1647,6 +1659,11 @@ header {
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
   border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.catalog-list .catalog-item:hover {
+  box-shadow: 0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
 .catalog-list .catalog-item:nth-child(3n) {
@@ -2189,15 +2206,15 @@ margin-bottom:6px;
   cursor: pointer;
 }
 
-li:nth-child(5):hover::before,
-li:nth-child(6):hover::before {
+.sorting-list li:nth-child(5):hover::before,
+.sorting-list li:nth-child(6):hover::before {
   background-image: url(../img/sorting-black.png);
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-li:nth-child(5):active::before,
-li:nth-child(6):active::before {
+.sorting-list li:nth-child(5):active::before,
+.sorting-list li:nth-child(6):active::before {
   background-image: url(../img/sorting-red.png);
   background-repeat: no-repeat;
   cursor: pointer;
@@ -2274,9 +2291,9 @@ li:nth-child(6):active::before {
           align-items: center;
 }
 
-.pagination-item a:hover,
-.pagination-item-next a:hover {
-  outline: 1px solid #bdc6ca;
+.pagination-item:hover,
+.pagination-item-next:hover {
+  border-color: #bdc6ca;
 }
 
 .pagination-item a:active,
@@ -2326,8 +2343,8 @@ li:nth-child(6):active::before {
   top: 0;
   left: 0;
 
-  width: 218px;
-  height: 88px;
+  width: 215px;
+  height: 170px;
   padding: 40px 0;
 
   font-size: 14px;
@@ -2361,13 +2378,13 @@ li:nth-child(6):active::before {
   left: 0%;
   margin-top: -5px;
   margin-left: 15px;
-  background-image: url(../img/basket-hover.png);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
 }
 
 .buy-button:hover::before {
-  background-image: url(../img/basket-hover.png);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 1;
 }
@@ -2400,6 +2417,7 @@ li:nth-child(6):active::before {
   background-color:#518534;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-bottom: none;
 }
 
 .bookmark-button:hover {
