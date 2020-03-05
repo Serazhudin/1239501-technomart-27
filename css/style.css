@@ -32,6 +32,10 @@ max-width:100%;
 height:auto;
 }
 
+.button {
+  border-radius: 3px;
+}
+
 /*HEADER*/
 header {
   background-color: #f4f7f9;
@@ -1293,10 +1297,14 @@ header {
   background-repeat: no-repeat;
 }
 
-.service-menu .active,
-.service-menu .button:not(.active):active {
+.service-menu .active {
   background-color: white;
   color: #32425c;
+}
+
+.service-menu .button:not(.active):active {
+  background-color: #293449;
+  color: white;
 }
 
 .service-slider h3 {
@@ -1873,23 +1881,25 @@ margin-bottom:6px;
   content:"";
   position:absolute;
   background-color: #f7f3ec;
-  height: 1px;
+  height: 2px;
   width: 220px;
   border:none;
   outline: none;
-  margin-bottom:-5px;
+  top: -5px;
 }
 
 .charge-type {
   position:relative;
 }
 
-.filter-producers {
-  margin-bottom:10px;
+.filter-charge {
+  margin-bottom:-13px;
 }
 
-.filter-charge {
-  margin-bottom:-15px;
+.filter-producers {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom:10px;
 }
 
 .filter-range {
@@ -1917,18 +1927,18 @@ margin-bottom:6px;
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background-color: orange;
+  background-color: #50a07e;
 }
 
 .range-controls .toggle {
   position: absolute;
-  top: 30px;
   width: 4px;
   height: 4px;
-  border-radius: 50%;
+  top: 30px;
+  background: #ababab;
   border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -2106,18 +2116,10 @@ margin-bottom:6px;
   cursor:pointer;
 }
 
-.filter-checkbox:hover label {
-  color: #b5b5b5;
-}
-
 .filter-checkbox:hover input[type="checkbox"]:checked + label::before {
   background-image: url(../img/chbox-on-hover.png);
   background-repeat: no-repeat;
   cursor:pointer;
-}
-
-.filter-checkbox:hover input[type="checkbox"]:checked + label {
-  color: #b5b5b5
 }
 
 /* Состояния радио */
@@ -2284,7 +2286,7 @@ margin-bottom:6px;
   color: black;
   display: block;
   width: 140px;
-  height: 35px;
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2453,27 +2455,28 @@ margin-bottom:6px;
 
 /*Модальные окна*/
 .modal {
+  display: none;
   position: fixed;
   background-color: white;
+  z-index: 1000;
 }
 
 .modal-contact {
-  display: none;
   top:50%;
   left:0%;
   width: 620px;
   height: 430px;
-  margin-top:-215px;
-  margin-left:310px;
+  margin-top:-265px;
+  margin-left:350px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
 
+.modal-show{
+  display: block;
+}
+
 .modal-catalog {
-  display: none;
-  top:50%;
-  left:0%;
-  width: 620px;
   height: 282px;
   margin-top:-141px;
   margin-left:310px;
@@ -2482,7 +2485,6 @@ margin-bottom:6px;
 }
 
 .modal-map {
-  display: none;
   top:50%;
   left:0%;
 
@@ -2557,6 +2559,10 @@ margin-bottom:6px;
   width: 460px;
 }
 
+.contact-form textarea {
+  height: 114px;
+}
+
 .modal-form-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2565,6 +2571,17 @@ margin-bottom:6px;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 22px;
+}
+
+.modal-form-bottom {
+padding: 0px;
+margin: 0px;
+background-color:#f4f4f4;
+width:620px;
+height: 112px;
+margin-left: -81px;
+margin-top: 37px;
+padding-left: 81px;
 }
 
 .modal-form-input {
@@ -2650,7 +2667,7 @@ margin-bottom:6px;
   height: 112px;
 }
 
-.modal-contact-bottom .button {
+.modal-contact .button {
   background-color: #ee3643;
   color: white;
   font-size: 14px;
@@ -2662,6 +2679,7 @@ margin-bottom:6px;
   display: block;
   width: 460px;
   height: 38px;
+  margin-top: 37px;
 }
 
 .modal-contact-bottom .button:hover {
