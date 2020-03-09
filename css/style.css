@@ -32,17 +32,13 @@ max-width:100%;
 height:auto;
 }
 
-.button {
-  border-radius: 3px;
-}
-
 /*HEADER*/
 header {
   background-color: #f4f7f9;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin:  0 auto;
 }
 
@@ -184,19 +180,18 @@ header {
 
 .bookmark {
   position: relative;
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .bookmark span {
   margin-left: 14px;
+  max-width: 150px;
 }
 
 .bookmark svg {
   position: absolute;
-
   top: 50%;
   left: 0%;
   margin-top: -11px;
@@ -206,8 +201,7 @@ header {
 
 .basket {
   position: relative;
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  width: 150px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -228,6 +222,7 @@ header {
 
 .basket span {
   margin-left: 16px;
+  max-width: 150px;
 }
 
 .order {
@@ -440,6 +435,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -723,11 +719,15 @@ header {
 .slider-1 .open-catalog {
   display: block;
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   margin-top: auto;
-
+  padding: 14px 45px 14px 49px;
   text-align: center;
-  line-height: 38px;
+  line-height: 12px;
+  font-size: 14px;
+  background-color: #ee3643;
+  color:white;
+  text-transform: uppercase;
 }
 
 .arrow-left {
@@ -812,13 +812,13 @@ header {
 .popular-items-name a {
   display: block;
   width: 253px;
-  height: 38px;
+  min-height: 38px;
   margin-right: 24px;
   margin-bottom: -9px;
-
+  padding:14px 53px 14px 53px;
   background-color: #ee3643;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 12px;
   color:white;
   text-transform: uppercase;
   text-align: center;
@@ -952,7 +952,6 @@ header {
   border-left-color: #ee3643;
 }
 
-.open-catalog,
 .credit a {
  background-color: #ee3643;
  font-size: 14px;
@@ -1062,14 +1061,14 @@ header {
 .popular-producers a {
  background-color: #ee3643;
  font-size: 14px;
- line-height: 38px;
+ line-height: 12px;
  color:white;
  text-transform: uppercase;
  text-align: center;
-
+ padding:14px 52px 14px 52px;
  display: block;
  width: 253px;
- height: 38px;
+ min-height: 38px;
  margin-right: 24px;
 }
 
@@ -1282,6 +1281,11 @@ header {
   color: white;
 }
 
+.service-menu .button:not(.active) {
+    box-shadow: 0px 1px 0 0 #293449,
+    inset 0px 1px 0 0 #405069;
+}
+
 .service-menu:after {
   content: "";
   position: absolute;
@@ -1325,8 +1329,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding:0px;
-  margin-top:85px;
-  margin-bottom:84px;
+  margin-top:83px;
+  margin-bottom:86px;
 }
 
 .about {
@@ -1471,7 +1475,7 @@ header {
   width: 300px;
   padding-top: 12px;
   padding-bottom: 8px;
-  margin-top:32px;
+  margin-top:34px;
 }
 
 .about .button {
@@ -1604,7 +1608,7 @@ header {
       -ms-flex-pack: center;
   justify-content: center;
   width:299px;
-  height: 45px;
+  min-height: 45px;
 
   margin:0px;
   padding:0px;
@@ -1940,6 +1944,7 @@ margin-bottom:6px;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
+  box-sizing:content-box;
 }
 
 .range-controls .toggle-min {
@@ -2818,6 +2823,7 @@ footer {
   background-image: url(../img/logo-bottom.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin-bottom:32px;
 }
 
 .footer-menu {
@@ -2895,6 +2901,7 @@ footer {
 
 .adress-phone {
   position: absolute;
+  width:322px;
   left:3px;
   bottom:51px;
 }
@@ -2912,6 +2919,7 @@ footer {
 }
 
 .footer-bottom {
+  min-height:107px;
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
@@ -2946,6 +2954,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin:0px;
   padding:0px;
