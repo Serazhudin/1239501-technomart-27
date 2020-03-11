@@ -1,4 +1,4 @@
-  var mapLink = document.querySelector(".map-map");
+  var mapLink = document.querySelector(".map-image");
   var mapPopup = document.querySelector(".modal-map");
   var mapClose = mapPopup.querySelector(".modal-close");
 
@@ -14,6 +14,7 @@ if (mapPopup.classList.contains("modal-show")) {
   mapPopup.classList.remove("modal-show");
 }
 }
+});
 
 mapClose.addEventListener("click", function(evt) {
   evt.preventDefault();

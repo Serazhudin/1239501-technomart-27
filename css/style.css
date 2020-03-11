@@ -1540,6 +1540,7 @@ header {
   color: black;
   text-align: center;
   margin-right:21px;
+  max-width:189px;
 }
 
 .header-info .user-name::before {
@@ -2565,7 +2566,8 @@ margin-bottom:6px;
   margin-left:223px;
 }
 
-.modal-map img {
+.modal-map img,
+.modal-map .gmaps {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
