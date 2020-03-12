@@ -369,9 +369,11 @@ header {
   display: block;
   position: relative;
 
-  width:121px;
+  min-width:121px;
+  max-width:150px;
   padding-top: 14px;
-  padding-left: 21px;
+  padding-left: 33px;
+  padding-right: 5px;
   padding-bottom: 11px;
   background-color: white;
   text-align: center;
@@ -396,9 +398,12 @@ header {
 
 .registration-link {
   display: block;
-  width:150px;
+  min-width:150px;
+  max-width:170px;
   padding-top: 14px;
   padding-bottom: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
   margin-left: 10px;
   text-align: center;
   background-color: white;
@@ -2001,7 +2006,7 @@ margin-bottom:6px;
 
 .filter .button {
   width: 140px;
-  height: 38px;
+  min-height: 38px;
   margin-top: 75px;
   background-color: white;
   border: 1px solid #e5e5e5;
@@ -2168,8 +2173,8 @@ margin-bottom:6px;
   text-transform: uppercase;
   font: inherit;
   font-size: 30px;
-
-  padding: 32px 742px 34px 29px;
+  line-height: 30px;
+  padding: 32px 10px 34px 29px;
 }
 
 /*Сортировка*/
@@ -3028,7 +3033,6 @@ footer {
   padding:0px;
   margin-right: 119px;
   width: 132px;
-  height: 42px;
 }
 
 .footer-social li {
@@ -3037,6 +3041,7 @@ footer {
 }
 
 .footer-social a {
+  position: relative;
   display: block;
   width: 42px;
   height: 42px;
@@ -3044,6 +3049,7 @@ footer {
   padding:0px;
   border-radius: 50%;
   background-color:#212a3a;
+  margin-bottom: 5px;
 }
 
 .footer-social .fb {
@@ -3063,7 +3069,8 @@ footer {
 
   top: 50%;
   margin-top: -7px;
-  left: 6%;
+  left: 50%;
+  margin-left: -13px;
 
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
