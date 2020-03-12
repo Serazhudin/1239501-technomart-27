@@ -307,11 +307,6 @@ header {
   margin-top:4px;
 }
 
-.header-info a {
-  color: black;
-  font-size: 21px;
-}
-
 .header-info .adress {
   color: #32425c;
   font-size: 14px;
@@ -363,6 +358,8 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-left:auto;
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .login-link {
@@ -378,6 +375,7 @@ header {
   background-color: white;
   text-align: center;
   box-sizing: border-box;
+  color: black;
 }
 
 .login-link::before {
@@ -407,6 +405,7 @@ header {
   margin-left: 10px;
   text-align: center;
   background-color: white;
+  color: black;
 }
 
 .login-link:hover,
@@ -1287,6 +1286,12 @@ header {
   color: white;
 }
 
+.service-menu .button:not(.active):active {
+  background-color: white;
+  color: #32425c;
+  box-shadow: none;
+}
+
 .service-menu .button:not(.active) {
     box-shadow: 0px 1px 0 0 #293449,
     inset 0px 1px 0 0 #405069;
@@ -1310,11 +1315,6 @@ header {
 .service-menu .active {
   background-color: white;
   color: #32425c;
-}
-
-.service-menu .button:not(.active):active {
-  background-color: #293449;
-  color: white;
 }
 
 .service-slider h3 {
@@ -1543,16 +1543,11 @@ header {
 .header-info .user-name {
   font-size: 21px;
   color: black;
-<<<<<<< HEAD
-
   max-width:188px;
   line-height:37px;
   padding-bottom:11px;
-=======
   text-align: center;
   margin-right:21px;
-  max-width:189px;
->>>>>>> 0f433e224525e2a481ff31ae13eec5156e6d85cf
 }
 
 .header-info .user-name::before {
@@ -2680,8 +2675,8 @@ padding-left: 81px;
           flex-direction: column;
 }
 
-.user-name,
-.user-email {
+.contact-form .user-name,
+.contact-form .user-email {
   width: 220px;
   height: 38px
 }
