@@ -921,6 +921,7 @@ header {
   text-align: center;
 
   width: 155px;
+  min-height:33px;
   padding: 0px;
   margin:0px;
   margin-right: 33px;
@@ -1541,11 +1542,17 @@ header {
 
 .header-info .user-name {
   font-size: 21px;
-  line-height: 37px;
   color: black;
+<<<<<<< HEAD
+
+  max-width:188px;
+  line-height:37px;
+  padding-bottom:11px;
+=======
   text-align: center;
   margin-right:21px;
   max-width:189px;
+>>>>>>> 0f433e224525e2a481ff31ae13eec5156e6d85cf
 }
 
 .header-info .user-name::before {
