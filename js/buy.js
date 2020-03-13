@@ -1,7 +1,13 @@
-var buttonBuy = document.querySelector(".buy-button");
+var buttonBuy = document.querySelectorAll(".buy-button");
 var popupBuy = document.querySelector(".modal-catalog");
+let onclickBuy;
 
-buttonBuy.addEventListener("click", function(evt) {
+
+for (var i=0; i<buttonBuy.length; i++) {
+  buttonBuy[i].addEventListener("click", function(evt) {
   evt.preventDefault();
   popupBuy.classList.add("modal-show");
 });
+}
+
+
