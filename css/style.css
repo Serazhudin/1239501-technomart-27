@@ -2504,7 +2504,7 @@ margin-bottom:6px;
   top:50%;
   left:0%;
   width: 620px;
-  height: 430px;
+  min-height: 415px;
   margin-top:-265px;
   margin-left:350px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
@@ -2563,9 +2563,13 @@ margin-bottom:6px;
 }
 
 .modal-catalog {
-  height: 282px;
-
-  margin-left:310px;
+  min-height: 282px;
+  min-width:620px;
+  max-width:650px;
+  top:50%;
+  left:50%;
+  margin-left:-310px;
+  margin-top:-141px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -2588,6 +2592,11 @@ margin-bottom:6px;
 
 .modal-catalog .red-shadow,
 .modal-contact .red-shadow {
+  min-height: 282px;
+  min-width:620px;
+  max-width:650px;
+  padding-left:50px;
+  padding-right:20px;
   -webkit-box-shadow: 0px -7px 0px  0px #ee3643;
           box-shadow: 0px -7px 0px  0px #ee3643;
   display: -webkit-box;
@@ -2607,8 +2616,7 @@ margin-bottom:6px;
 .modal-contact .red-shadow {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 48px;
-  padding-bottom: 37px;
+  padding-top: 45px;
   padding-left: 81px;
   padding-right: 80px;
 }
@@ -2632,7 +2640,7 @@ margin-bottom:6px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   color:black;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
 }
 
 .contact-form {
@@ -2657,7 +2665,7 @@ margin-bottom:6px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
 }
 
 .modal-form-bottom {
@@ -2665,7 +2673,7 @@ padding: 0px;
 margin: 0px;
 background-color:#f4f4f4;
 width:620px;
-height: 112px;
+height: 110px;
 margin-left: -81px;
 margin-top: 37px;
 padding-left: 81px;
@@ -2684,13 +2692,18 @@ padding-left: 81px;
 
 .contact-form .user-name,
 .contact-form .user-email {
-  width: 220px;
-  height: 38px
+  width: 218px;
+  height: 36px
 }
 
 .contact-form input,
 .contact-form textarea {
   outline: 1px solid #dee3e4;
+  padding-left:16px;
+}
+
+.contact-form textarea{
+  padding-top:5px;
 }
 
 .contact-form input:hover,
