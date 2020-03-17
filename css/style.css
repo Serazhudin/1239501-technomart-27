@@ -29,7 +29,7 @@ img {
   height: auto;
 }
 
-header {
+.site-header {
   background-color: #f4f7f9;
 }
 
@@ -1084,20 +1084,16 @@ header {
 }
 
 .service-slider li:nth-child(2) {
-  display: none;
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-color: lightgrey;
 }
 
 .service-slider li:nth-child(3) {
-  display: none;
   position: relative;
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-color: lightgrey;
 }
 
 .delivery-text {
@@ -1119,7 +1115,7 @@ header {
 .delivery-text p {
   display: block;
   width: 275px;
-  height: 83px;
+  min-height: 83px;
   margin: 0px;
 }
 
@@ -1138,11 +1134,12 @@ header {
 .guarantee-text p {
   display: block;
   width: 379px;
-  height: 109px;
+  min-height: 109px;
   margin: 0px;
 }
 
 .credit-text {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1157,7 +1154,7 @@ header {
 .credit-text p {
   display: block;
   width: 279px;
-  height: 36px;
+  min-height: 36px;
   margin: 0px;
 }
 
@@ -1165,13 +1162,13 @@ header {
   position: absolute;
   display: block;
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   margin: 0px;
   left: 80px;
   bottom: 66px;
   background-color: #ee3643;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -1241,6 +1238,7 @@ header {
 
 .service-slider h3 {
   color: #32425c;
+  width:275px;
   font-size: 36px;
   line-height: 24px;
   text-transform: uppercase;
@@ -2351,11 +2349,11 @@ fieldset legend {
 
 .modal-contact {
   top: 50%;
-  left: 0%;
+  left: 50%;
   width: 620px;
   min-height: 415px;
   margin-top: -265px;
-  margin-left: 350px;
+  margin-left: -310px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -2425,11 +2423,11 @@ fieldset legend {
 
 .modal-map {
   top: 50%;
-  left: 0%;
+  left: 50%;
   width: 940px;
   height: 446.2px;
   margin-top: -223px;
-  margin-left: 223px;
+  margin-left: -470px;
 }
 
 .modal-map iframe {
@@ -2737,13 +2735,13 @@ fieldset legend {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
 }
 
@@ -2751,7 +2749,7 @@ fieldset legend {
   opacity: 0;
 }
 
-footer {
+.site-footer {
   background-color: #32425c;
 }
 
@@ -2886,7 +2884,7 @@ footer {
 
 .footer-copyright {
   display: block;
-  width: 240px;
+  width: 220px;
   height: 33px;
   margin: 0px;
   margin-right: 161px;
