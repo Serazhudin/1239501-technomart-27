@@ -1,4 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 html {
 box-sizing: border-box;
 }
@@ -30,7 +29,6 @@ max-width:100%;
 height:auto;
 }
 
-/*HEADER*/
 header {
   background-color: #f4f7f9;
 }
@@ -40,9 +38,6 @@ header {
   margin:  0 auto;
 }
 
-/*HEADER*/
-
-/*Верхняя часть хедера*/
 .top-bar {
   background-color:#293449;
 }
@@ -277,9 +272,6 @@ header {
   margin-left: 18px;
 }
 
-/*Верхняя часть хедера КОНЕЦ*/
-
-/*Средняя часть хедера*/
 .header-info .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,13 +283,11 @@ header {
 .header-info h1 {
   display: block;
   width: 196px;
-
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   font-weight: 400;
-
   margin-left:53px;
   margin-right:71px;
   margin-top:4px;
@@ -333,10 +323,8 @@ header {
 .header-info .phone-header::before {
   content: "";
   position: absolute;
-
   width: 19px;
   height: 19px;
-
   top: 50%;
   left: 12px;
   margin-top: -9px;
@@ -359,7 +347,6 @@ header {
 .login-link {
   display: block;
   position: relative;
-
   min-width:121px;
   max-width:150px;
   padding-top: 14px;
@@ -417,10 +404,6 @@ header {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/*Средняя часть хедера КОНЕЦ*/
-
-
-/*Нижняя часть хедера Меню*/
 .navigation {
   padding-bottom: 62px;
 }
@@ -458,16 +441,11 @@ header {
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
 }
-/*Нижняя часть хедера Меню Конец*/
 
-/*HEADER Конец*/
-
-/*Раздел MAIN*/
 .page-main-index {
   color: black;
 }
 
-/*Большие иконки и слайдер*/
 .icons-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,9 +751,7 @@ header {
   border-radius: 50%;
   cursor: pointer;
 }
-/*Большие иконки и слайдер КОНЕЦ*/
 
-/*Популярные товары Заголовк + Кнопка*/
 .popular-items-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -822,9 +798,7 @@ header {
 .popular-items-name a:active {
   background-color: #ba2732;
 }
-/*Популярные товары Заголовк + Кнопка КОНЕЦ*/
 
-/*Популярные товары*/
 .popular-items-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -860,7 +834,6 @@ header {
   margin-left: 20px;
   margin-top: 24px;
   padding-bottom: 21px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   border: 1px solid #e5e5e5;
@@ -946,9 +919,7 @@ header {
 .credit a:active {
   background-color: #ba2732;
 }
-/*Популярные товары КОНЕЦ*/
 
-/*Популярные производители*/
 .popular-producers-list {
   list-style: none;
   padding: 0px;
@@ -1005,7 +976,6 @@ header {
   opacity: 0.3;
 }
 
-/*Популярные производители Заголовк + Кнопка*/
 .popular-producers {
   background-color:#f9f5f0;
   display: -webkit-box;
@@ -1050,9 +1020,7 @@ header {
 .popular-producers a:active {
   background-color: #ba2732;
 }
-/*Популярные производители Заголовк + Кнопка КОНЕЦ*/
 
-/*Сервис и Доставка*/
 .service {
   background-color: #f4f7f9;
 }
@@ -1286,9 +1254,7 @@ header {
   margin-top: 9px;
   margin-bottom: 33px;
 }
-/*Сервис и Доставка КОНЕЦ*/
 
-/*О компании и Контакты*/
 .about-and-contacts .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1452,11 +1418,7 @@ header {
 .contacts .button:active {
   background-color: #ba2732;
 }
-/*Index О компании и Контакты КОНЕЦ*/
-/*Раздел MAIN Конец*/
 
-/*КАТАЛОГ*/
-/*Каталог Header*/
 .header-info .order-link {
   font-size: 16px;
   line-height: 18px;
@@ -1493,7 +1455,6 @@ header {
   color: black;
   max-width:188px;
   line-height:37px;
-  padding-bottom:11px;
   text-align: center;
   margin-right:21px;
 }
@@ -1562,7 +1523,7 @@ header {
   min-height: 45px;
   margin:0px;
   padding:0px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   background-color: white;
 }
 
@@ -1607,8 +1568,6 @@ header {
 .header-info .logout-link:active {
   opacity: 0.5;
 }
-/*Каталог Header КОНЕЦ*/
-
 
 .catalog-list {
   display: -webkit-box;
@@ -1637,7 +1596,6 @@ header {
   margin-right: 23px;
   margin-top: 21px;
   padding-bottom: 21px;
-
   font-size: 18px;
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1670,7 +1628,6 @@ header {
   margin-bottom: 5px;
 }
 
-/*Хлебные крошки*/
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1752,9 +1709,7 @@ header {
   text-decoration: underline;
   color:black;
 }
-/*Хлебные крошки Конец*/
 
-/*Фильтр Каталога*/
 .general-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1973,7 +1928,6 @@ fieldset legend {
   text-transform: uppercase;
 }
 
-/* Стилизация чекбокса */
 .filter-checkbox {
   position: relative;
   margin-bottom: 17px;
@@ -1988,7 +1942,6 @@ fieldset legend {
   margin-left:35px;
 }
 
-/* Стилизация радиокнопки */
 .filter-radio {
   display: block;
   position: relative;
@@ -1996,7 +1949,6 @@ fieldset legend {
   margin-bottom: 16px;
 }
 
-/*квадрат под чекбокс */
 .filter-checkbox label::before {
   content: "";
   position: absolute;
@@ -2010,7 +1962,6 @@ fieldset legend {
   cursor:pointer;
 }
 
-/*круг под рабиокнопку */
 .filter-radio label::before {
   content: "";
   position: absolute;
@@ -2024,7 +1975,6 @@ fieldset legend {
   cursor:pointer;
 }
 
-/*чекбокс включен*/
 .filter-checkbox input[type="checkbox"]:checked + label::before {
   content: "";
   position: absolute;
@@ -2038,7 +1988,6 @@ fieldset legend {
   cursor:pointer;
 }
 
-/*радиокнопка включена*/
 .filter-radio input[type="radio"]:checked + label::before  {
   content: "";
   position: absolute;
@@ -2052,7 +2001,6 @@ fieldset legend {
   cursor:pointer;
 }
 
-/* Состояния чекбокса */
 .filter-checkbox:hover label::before {
   background-image: url(../img/chbox-off-hover.png);
   background-repeat: no-repeat;
@@ -2075,7 +2023,6 @@ fieldset legend {
   cursor:pointer;
 }
 
-/* Состояния радио */
 .filter-radio:hover label::before {
   background-image: url(../img/radio-off-hover.png);
   background-repeat: no-repeat;
@@ -2097,7 +2044,6 @@ fieldset legend {
   background-repeat: no-repeat;
   cursor:pointer;
 }
-/*Фильтр Каталога Конец*/
 
 .page-main-catalog h1 {
   background-color:#f2f6f8;
@@ -2109,7 +2055,6 @@ fieldset legend {
   padding: 32px 10px 34px 29px;
 }
 
-/*Сортировка*/
 .sorting {
   background-color: #f7f3ec;
   font-family: "PT Sans", Arial, sans-serif;
@@ -2217,9 +2162,7 @@ fieldset legend {
   color:#ee3643;
   text-decoration: none;
 }
-/*Сортировка Конец*/
 
-/*Пагинация*/
 .pagination-list {
   list-style: none;
   display: -webkit-box;
@@ -2288,9 +2231,7 @@ fieldset legend {
   background-color:#ee3643;
   color: white;
 }
-/*Пагинаци Конец*/
 
-/*Пара слов о тперфораторах*/
 .about-tool {
   background-color:#f4f7f9;
   color: black;
@@ -2319,7 +2260,6 @@ fieldset legend {
   letter-spacing: 0.15px;
 }
 
-/*Кнопки Купить и Взакладки Скрытые*/
 .on-hover {
   display: none;
   position: absolute;
@@ -2406,10 +2346,7 @@ fieldset legend {
 .bookmark-button:active {
   opacity: 0.3;
 }
-/*Кнопки Купить и Взакладки Скрытые КОНЕЦ*/
-/*Каталог Конец*/
 
-/*Модальные окна*/
 .modal {
   display: none;
   position: fixed;
@@ -2799,7 +2736,6 @@ fieldset legend {
 .contact-form .button:active {
   background-color: #ba2732;
 }
-/*Модальные окна Конец*/
 
 .visually-hidden {
   position: absolute !important;
@@ -2816,7 +2752,6 @@ fieldset legend {
   opacity: 0;
 }
 
-/*FOOTER*/
 footer {
   background-color: #32425c;
 }
@@ -2863,7 +2798,6 @@ footer {
   margin:0px;
   padding: 0px;
   margin-top:37px;
-
 }
 
 .footer-menu-white li {
@@ -3073,4 +3007,3 @@ footer {
   text-decoration: underline;
 }
 
-/*FOOTER END*/
