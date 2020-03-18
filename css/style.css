@@ -474,7 +474,7 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   line-height: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -654,10 +654,20 @@ img {
 }
 
 .slide-2 {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-image: url(../img/slider-image-2.jpg);
   background-color: lightgrey;
+}
+
+.slide-2 {
+  display: none;
 }
 
 .slider-1 h2 {
@@ -679,7 +689,6 @@ img {
 .slider-1 .open-catalog {
   display: block;
   width: 195px;
-  min-height: 38px;
   margin-top: auto;
   padding: 14px 45px 14px 49px;
   text-align: center;
@@ -1084,12 +1093,14 @@ img {
 }
 
 .service-slider li:nth-child(2) {
+  display: none;
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .service-slider li:nth-child(3) {
+  display: none;
   position: relative;
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
@@ -2074,6 +2085,7 @@ fieldset legend {
   color: black;
   font-size: 13px;
   line-height: 18px;
+  max-width: 85px;
   margin: 0px;
   margin-left: 19px;
   margin-right: 139px;
@@ -2081,14 +2093,17 @@ fieldset legend {
 
 .sorting-list li:nth-child(2) {
   margin-right: 71px;
+  max-width: 55px;
 }
 
 .sorting-list li:nth-child(3) {
   margin-right: 65px;
+  max-width: 53px;
 }
 
 .sorting-list li:nth-child(4) {
   margin-right: 46px;
+  max-width: 113px;
 }
 
 .sorting-list li:nth-child(5) {

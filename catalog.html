@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7СPT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -93,8 +92,8 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="toggle toggle-min" aria-label="Минимальная цена"></div>
+                  <div class="toggle toggle-max" aria-label="Максимальная цена"></div>
                 </div>
                 <div class="price-controls">
                   <input name="min-price" type="number" value="0">
@@ -151,8 +150,8 @@
               <li><a href="#">По цене</a></li>
               <li><a href="#">По типу</a></li>
               <li><a href="#">По функционалу</a></li>
-              <li class="arrow-up"><a class="active-arrow" href="#"></a></li>
-              <li class="arrow-down"><a href="#"></a></li>
+              <li><a  href="#" aria-label="Сортировка по возрастанию"></a></li>
+              <li><a href="#" aria-label="Сортировка по убыванию"></a></li>
             </ul>
           </section>
 
@@ -298,7 +297,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="footer-top">
       <div class="container">
         <a class="logo" href="index.html"></a>
@@ -329,20 +328,43 @@
         <p class="footer-copyright">&copy;&nbsp;2010&nbsp;-&nbsp;2017&nbsp;Компания&nbsp;&laquo;Техномарт&raquo; Все права защищены</p>
         <ul class="footer-social">
           <li>
-            <a class="vk" href="#"></a>
+            <a class="vk" href="#" aria-label="Вконтакте"></a>
           </li>
           <li>
-            <a class="fb" href="#"></a>
+            <a class="fb" href="#" aria-label="Фейсбук"></a>
           </li>
           <li>
-            <a class="instagram" href="#"></a>
+            <a class="instagram" href="#" aria-label="Инстаграм"></a>
           </li>
         </ul>
-        <p class="call-back">Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
-        <p class="developed-by">Разработано&nbsp;- <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <p class="call-back">Обратная&nbsp;связь: <a href="#">mail@htmlacademy.ru</a></p>
+        <p class="developed-by">Разработано&nbsp;-<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-contact">
+    <div class="red-shadow">
+      <div class="modal-close"></div>
+      <form class="contact-form" action="https://echo.technomart.ru" method="post">
+        <div class="modal-form-top">
+          <div class="modal-form-input">
+            <label for="user-name">Ваше имя:</label><input class="user-name" type="text" id="user-name" name="user-name" placeholder="Имя Фамилия"></div>
+          <div class="modal-form-input">
+            <label for="user-email">Ваш e-mail:</label><input class="user-email" type="email" id="user-email" name="user-email" placeholder="email@example.com"></div>
+        </div>
+        <label for="modal-text">Текст письма:</label><textarea name="text-modal-contact" id="modal-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        <p class="modal-form-bottom"><button class="button" type="submit">Отправить</button></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург</h2>
+    <div class="modal-close"></div>
+    <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615677183!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1583935339264!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen></iframe>
+    <img class="visually-hidden" src="img/map.jpg" width="940" height="446" alt="Карта с расположением магазина Техномарт по адресу ул.Б. Конюшенная 19/8, Санкт-Петербург">
+  </section>
 
   <section class="modal modal-catalog">
     <div class="red-shadow">
@@ -354,7 +376,7 @@
       </div>
     </div>
   </section>
-  <script src="js/buy.min.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
