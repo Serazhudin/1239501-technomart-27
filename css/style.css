@@ -690,7 +690,7 @@ img {
   display: block;
   width: 195px;
   margin-top: auto;
-  padding: 14px 45px 14px 49px;
+  padding: 14px 43px 14px 47px;
   text-align: center;
   line-height: 12px;
   font-size: 14px;
@@ -1874,7 +1874,6 @@ fieldset legend {
   height: 38px;
   padding: 0px;
   margin: 0px;
-  padding-left: 20px;
   text-align: center;
   background-color: #f7f3ec;
   border: none;
@@ -2282,7 +2281,8 @@ fieldset legend {
   text-transform: uppercase;
 }
 
-.buy-button {
+.buy-button,
+.buy-button-main {
   display: block;
   position: relative;
   width: 135px;
@@ -2297,7 +2297,8 @@ fieldset legend {
   border-radius: 3px;
 }
 
-.buy-button::before {
+.buy-button::before,
+.buy-button-main::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -2311,7 +2312,8 @@ fieldset legend {
   opacity: 0.3;
 }
 
-.buy-button:hover::before {
+.buy-button:hover::before,
+.buy-button-main:hover::before {
   background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 1;
@@ -2336,11 +2338,13 @@ fieldset legend {
   display: block;
 }
 
-.buy-button:hover {
+.buy-button:hover,
+.buy-button-main:hover {
   background-color: #5fbb2d;
 }
 
-.buy-button:active {
+.buy-button:active,
+.buy-button-main:active {
   background-color: #518534;
   -webkit-box-shadow: none;
   box-shadow: none;

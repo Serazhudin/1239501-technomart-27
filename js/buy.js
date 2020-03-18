@@ -1,4 +1,4 @@
-var buyButton = document.querySelectorAll(".buy-button");
+var buyButton = document.querySelectorAll(".buy-button1");
 var buyPopup = document.querySelector(".modal-catalog");
 var buyClose = buyPopup.querySelector(".modal-close");
 

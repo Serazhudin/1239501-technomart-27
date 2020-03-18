@@ -4,6 +4,7 @@ var close = document.querySelector(".modal-close");
 var login = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=user-email]");
 var form = popup.querySelector("form");
+var buyButtonMain = document.querySelectorAll(".buy-button-main");
 var buyButton = document.querySelectorAll(".buy-button");
 var buyPopup = document.querySelector(".modal-catalog");
 var buyClose = buyPopup.querySelector(".modal-close");
@@ -61,11 +62,20 @@ window.addEventListener("keydown", function(evt) {
   }
 });
 
+if (buyButtonMain) {
+for (var i = 0; i < buyButtonMain.length; i++) {
+  buyButtonMain[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    buyPopup.classList.add("modal-show");
+  });
+}
+} else {
 for (var i = 0; i < buyButton.length; i++) {
   buyButton[i].addEventListener("click", function(evt) {
     evt.preventDefault();
     buyPopup.classList.add("modal-show");
   });
+}
 }
 
 window.addEventListener("keydown", function(evt) {
