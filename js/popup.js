@@ -4,6 +4,12 @@ var close = document.querySelector(".modal-close");
 var login = popup.querySelector("[name=user-name]");
 var email = popup.querySelector("[name=user-email]");
 var form = popup.querySelector("form");
+var buyButton = document.querySelectorAll(".buy-button");
+var buyPopup = document.querySelector(".modal-catalog");
+var buyClose = buyPopup.querySelector(".modal-close");
+var mapLink = document.querySelector(".map-image");
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
 
 var storage = localStorage.getItem("login");
 var isStorageSupport = true;
@@ -53,4 +59,44 @@ window.addEventListener("keydown", function(evt) {
       popup.classList.remove("modal-error");
     }
   }
+});
+
+for (var i = 0; i < buyButton.length; i++) {
+  buyButton[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    buyPopup.classList.add("modal-show");
+  });
+}
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (buyPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      buyPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+buyClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("modal-show");
+});
+
+mapLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.add("modal-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    }
+  }
+});
+
+mapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  mapPopup.classList.remove("modal-show");
 });

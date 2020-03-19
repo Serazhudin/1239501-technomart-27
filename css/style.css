@@ -29,7 +29,7 @@ img {
   height: auto;
 }
 
-header {
+.site-header {
   background-color: #f4f7f9;
 }
 
@@ -474,7 +474,7 @@ header {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 300px;
-  height: 123px;
+  min-height: 123px;
   line-height: 30px;
   font-weight: 700;
   font-size: 24px;
@@ -654,10 +654,20 @@ header {
 }
 
 .slide-2 {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-image: url(../img/slider-image-2.jpg);
   background-color: lightgrey;
+}
+
+.slide-2 {
+  display: none;
 }
 
 .slider-1 h2 {
@@ -679,9 +689,8 @@ header {
 .slider-1 .open-catalog {
   display: block;
   width: 195px;
-  min-height: 38px;
   margin-top: auto;
-  padding: 14px 45px 14px 49px;
+  padding: 14px 43px 14px 47px;
   text-align: center;
   line-height: 12px;
   font-size: 14px;
@@ -1046,9 +1055,9 @@ header {
 .service-description {
   display: block;
   width: 398px;
-  height: 37px;
+  min-height: 37px;
   margin: 0px;
-  padding-bottom: 114px;
+  padding-bottom: 64px;
 }
 
 .service-slider-menu {
@@ -1088,7 +1097,6 @@ header {
   background-image: url(../img/guarantee.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-color: lightgrey;
 }
 
 .service-slider li:nth-child(3) {
@@ -1097,7 +1105,6 @@ header {
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-color: lightgrey;
 }
 
 .delivery-text {
@@ -1119,7 +1126,7 @@ header {
 .delivery-text p {
   display: block;
   width: 275px;
-  height: 83px;
+  min-height: 83px;
   margin: 0px;
 }
 
@@ -1138,11 +1145,12 @@ header {
 .guarantee-text p {
   display: block;
   width: 379px;
-  height: 109px;
+  min-height: 109px;
   margin: 0px;
 }
 
 .credit-text {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1157,7 +1165,7 @@ header {
 .credit-text p {
   display: block;
   width: 279px;
-  height: 36px;
+  min-height: 36px;
   margin: 0px;
 }
 
@@ -1165,13 +1173,13 @@ header {
   position: absolute;
   display: block;
   width: 195px;
-  height: 38px;
+  min-height: 38px;
   margin: 0px;
   left: 80px;
   bottom: 66px;
   background-color: #ee3643;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -1198,7 +1206,7 @@ header {
   line-height: 30px;
   font-weight: 700;
   width: 240px;
-  height: 64px;
+  min-height: 64px;
   background-color: #32425c;
   border: none;
   outline: none;
@@ -1241,6 +1249,7 @@ header {
 
 .service-slider h3 {
   color: #32425c;
+  width: 275px;
   font-size: 36px;
   line-height: 24px;
   text-transform: uppercase;
@@ -1255,7 +1264,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding: 0px;
-  margin-top: 83px;
+  margin-top: 73px;
   margin-bottom: 86px;
 }
 
@@ -1865,7 +1874,6 @@ fieldset legend {
   height: 38px;
   padding: 0px;
   margin: 0px;
-  padding-left: 20px;
   text-align: center;
   background-color: #f7f3ec;
   border: none;
@@ -2047,7 +2055,7 @@ fieldset legend {
   font: inherit;
   font-size: 30px;
   line-height: 30px;
-  padding: 32px 10px 34px 29px;
+  padding: 28px 10px 30px 29px;
 }
 
 .sorting {
@@ -2076,6 +2084,7 @@ fieldset legend {
   color: black;
   font-size: 13px;
   line-height: 18px;
+  max-width: 85px;
   margin: 0px;
   margin-left: 19px;
   margin-right: 139px;
@@ -2083,14 +2092,17 @@ fieldset legend {
 
 .sorting-list li:nth-child(2) {
   margin-right: 71px;
+  max-width: 55px;
 }
 
 .sorting-list li:nth-child(3) {
   margin-right: 65px;
+  max-width: 53px;
 }
 
 .sorting-list li:nth-child(4) {
   margin-right: 46px;
+  max-width: 113px;
 }
 
 .sorting-list li:nth-child(5) {
@@ -2269,7 +2281,8 @@ fieldset legend {
   text-transform: uppercase;
 }
 
-.buy-button {
+.buy-button,
+.buy-button-main {
   display: block;
   position: relative;
   width: 135px;
@@ -2284,7 +2297,8 @@ fieldset legend {
   border-radius: 3px;
 }
 
-.buy-button::before {
+.buy-button::before,
+.buy-button-main::before {
   content: "";
   position: absolute;
   width: 17px;
@@ -2298,7 +2312,8 @@ fieldset legend {
   opacity: 0.3;
 }
 
-.buy-button:hover::before {
+.buy-button:hover::before,
+.buy-button-main:hover::before {
   background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   opacity: 1;
@@ -2323,11 +2338,13 @@ fieldset legend {
   display: block;
 }
 
-.buy-button:hover {
+.buy-button:hover,
+.buy-button-main:hover {
   background-color: #5fbb2d;
 }
 
-.buy-button:active {
+.buy-button:active,
+.buy-button-main:active {
   background-color: #518534;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -2351,11 +2368,11 @@ fieldset legend {
 
 .modal-contact {
   top: 50%;
-  left: 0%;
+  left: 50%;
   width: 620px;
   min-height: 415px;
   margin-top: -265px;
-  margin-left: 350px;
+  margin-left: -310px;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.75);
 }
@@ -2425,11 +2442,11 @@ fieldset legend {
 
 .modal-map {
   top: 50%;
-  left: 0%;
+  left: 50%;
   width: 940px;
   height: 446.2px;
   margin-top: -223px;
-  margin-left: 223px;
+  margin-left: -470px;
 }
 
 .modal-map iframe {
@@ -2737,13 +2754,13 @@ fieldset legend {
 }
 
 .visually-hidden {
-  position: absolute !important;
+  position: absolute;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
 }
 
@@ -2751,7 +2768,7 @@ fieldset legend {
   opacity: 0;
 }
 
-footer {
+.site-footer {
   background-color: #32425c;
 }
 
@@ -2886,10 +2903,10 @@ footer {
 
 .footer-copyright {
   display: block;
-  width: 240px;
+  width: 220px;
   height: 33px;
   margin: 0px;
-  margin-right: 161px;
+  margin-right: 168px;
 }
 
 .footer-social {
